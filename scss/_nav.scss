@@ -9,6 +9,11 @@
       outline-color: lighten($primary, 15%);
     }
   }
+  .img-profile {
+    max-width: 4rem;
+    max-height: 4rem;
+    border: 0.3rem solid fade-out($gray-500, 0.8);
+  }
 }
 
 @media (min-width: 992px) {
@@ -31,7 +36,7 @@
       .img-profile {
         max-width: 10rem;
         max-height: 10rem;
-        border: 0.5rem solid fade-out($white, 0.8);
+        border: 0.5rem solid fade-out($gray-500, 0.8);
       }
     }
     .navbar-collapse {
