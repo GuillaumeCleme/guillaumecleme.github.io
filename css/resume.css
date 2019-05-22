@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #1f1f1f;
 }
 
 .dev-icons {
@@ -80,7 +80,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #1f1f1f;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -90,7 +90,13 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #454545;
+}
+
+#sideNav .img-profile {
+  max-width: 4rem;
+  max-height: 4rem;
+  border: 0.3rem solid rgba(173, 181, 189, 0.2);
 }
 
 @media (min-width: 992px) {
@@ -119,7 +125,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.5rem solid rgba(173, 181, 189, 0.2);
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
@@ -175,18 +181,29 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+.hr-header {
+  background-color: #ffd966;
+  height: 1rem;
+  border: none;
+  border-top: none;
+}
+
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #1f1f1f !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #1f1f1f !important;
+}
+
+.text-secondary {
+  color: #ffd966 !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #1f1f1f;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: black;
 }

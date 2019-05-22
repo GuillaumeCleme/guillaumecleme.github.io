@@ -6,6 +6,10 @@
   color: $primary !important;
 }
 
+.text-secondary {
+  color: $secondary !important;
+}
+
 a {
   color: $primary;
   &:hover,
