@@ -32,3 +32,11 @@ section.resume-section {
   border: none;
   border-top: none;
 }
+
+.grow {
+  transition: all .3s ease-in-out;
+  //TODO Media Query, disable on mobile?
+  &:hover {
+     transform: scale(1.1);
+   }
+}
