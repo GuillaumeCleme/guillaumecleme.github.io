@@ -196,7 +196,6 @@ section.resume-section .resume-item .resume-date {
 .grow:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  background: #f2f2f2;
 }
 
 .bg-primary {
