@@ -168,6 +168,7 @@ section.resume-section {
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
@@ -176,6 +177,7 @@ section.resume-section .resume-item .resume-date {
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
+    font-size: 1rem;
   }
 }
 
