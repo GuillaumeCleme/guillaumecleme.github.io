@@ -1,11 +1,11 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
-    "version": "5.0.5",
+    "title": "Guillaume Clement - Resume",
+    "name": "guillaumec91.github.io",
+    "version": "0.0.5",
     "scripts": {
         "start": "gulp watch"
     },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "Guillaume Clement's resume built using a simple, yet elegant resume and CV theme for Bootstrap 4.",
     "keywords": [
         "css",
         "sass",
@@ -14,19 +14,20 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "homepage": "https://guillaumec91.github.io",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/GuillaumeC91/guillaumec91.github.io/issues",
+        "email": "clement.guillaume@live.ca"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Guillaume Clement",
     "contributors": [
+        "Guillaume Clement (https://guillaumec91.github.io)",
         "David Miller (http://davidmiller.io/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "https://github.com/GuillaumeC91/guillaumec91.github.io.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.8.1",
