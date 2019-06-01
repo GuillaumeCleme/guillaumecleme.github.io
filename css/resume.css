@@ -88,6 +88,10 @@ p.lead {
   color: #1f1f1f;
 }
 
+.dev-icons a {
+  color: #495057;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -226,5 +230,5 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: black;
+  color: #9f9f9f;
 }
