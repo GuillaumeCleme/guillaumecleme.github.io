@@ -56,6 +56,10 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
 
+  <!-- Datatables CSS -->
+  <link href="vendor/datatables/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+  <link href="vendor/datatables/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet" />
 
@@ -92,10 +96,10 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
-        <!-- TODO
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
+        <!-- TODO
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
@@ -535,13 +539,50 @@ With a broad understanding of enterprise technology, a deep technical skillset, 
       </div>
     </section>
 
-    <!-- TODO
-
-    <hr class="m-0">
-
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
+
+        <table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+          <thead>
+              <tr>
+                  <th>First name</th>
+                  <th>Last name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+                  <th>Extn.</th>
+                  <th>E-mail</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Tiger</td>
+                  <td>Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <td>61</td>
+                  <td>2011/04/25</td>
+                  <td>$320,800</td>
+                  <td>5421</td>
+                  <td>t.nixon@datatables.net</td>
+              </tr>
+              <tr>
+                  <td>Garrett</td>
+                  <td>Winters</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td>63</td>
+                  <td>2011/07/25</td>
+                  <td>$170,750</td>
+                  <td>8422</td>
+                  <td>g.winters@datatables.net</td>
+              </tr>
+            </tbody>
+          </table>
+
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
@@ -601,6 +642,7 @@ With a broad understanding of enterprise technology, a deep technical skillset, 
       </div>
     </section>
 
+<!-- TODO
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
@@ -656,6 +698,12 @@ With a broad understanding of enterprise technology, a deep technical skillset, 
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Datatables JavaScript -->
+  <script src="vendor/datatables/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="vendor/datatables/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="vendor/datatables/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>

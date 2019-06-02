@@ -25,4 +25,7 @@
     target: '#sideNav'
   });
 
+  //Enable Datatables
+  $('#example').DataTable();
+
 })(jQuery); // End of use strict
