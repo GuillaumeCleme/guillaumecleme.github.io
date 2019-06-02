@@ -209,8 +209,8 @@ section.resume-section .resume-item .resume-date {
   transform: scale(1.1);
 }
 
-.dataTables_filter {
-  display: none;
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 0;
 }
 
 .bg-primary {
@@ -250,4 +250,8 @@ a:hover, a:focus, a:active {
   border: 0;
   border-bottom: 1px solid #ced4da;
   border-radius: 0;
+}
+
+label {
+  margin-bottom: 0;
 }

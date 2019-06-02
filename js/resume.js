@@ -28,8 +28,12 @@
   //Bind Datatables
   var dataTable = $('#example').DataTable({
         "ajax": "js/skills.json",
-        "paging":   false,
-        "info":     false,
+        "dom": '<<"input-group mb-3" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f><t>>',
+        "language": {
+          "search": "",
+          "searchPlaceholder": "Search skills"
+        },
+        "info": false,
         "columnDefs": [
           { "width": "40%", "targets": 0 },
           {
@@ -47,10 +51,5 @@
             { "data": "skill" },
             { "data": "level" }
         ]
-  });
-
-  //Add listener to Datatables searchbox override
-  $("#searchbox").on("keyup search input paste cut", function() {
-     dataTable.search(this.value).draw();
   });
 })(jQuery); // End of use strict
