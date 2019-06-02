@@ -25,7 +25,14 @@
     target: '#sideNav'
   });
 
-  //Enable Datatables
-  $('#example').DataTable();
+  //Bind Datatables
+  var dataTable = $('#example').DataTable({
+        "paging":   false,
+        "info":     false
+  });
 
+  //Add listener to Datatables searchbox override
+  $("#searchbox").on("keyup search input paste cut", function() {
+     dataTable.search(this.value).draw();
+  });
 })(jQuery); // End of use strict

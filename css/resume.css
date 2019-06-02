@@ -209,6 +209,10 @@ section.resume-section .resume-item .resume-date {
   transform: scale(1.1);
 }
 
+.dataTables_filter {
+  display: none;
+}
+
 .bg-primary {
   background-color: #1f1f1f !important;
 }
