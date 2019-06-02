@@ -1,0 +1,12 @@
+{
+  "data": [
+        {
+            "skill":    "Adobe Acrobat",
+            "level":   90
+        },
+        {
+            "skill":    "Adobe Experience Manager Forms",
+            "level":   100
+        }
+    ]
+}

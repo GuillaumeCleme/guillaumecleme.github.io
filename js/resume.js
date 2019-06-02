@@ -27,8 +27,26 @@
 
   //Bind Datatables
   var dataTable = $('#example').DataTable({
+        "ajax": "js/skills.json",
         "paging":   false,
-        "info":     false
+        "info":     false,
+        "columnDefs": [
+          { "width": "40%", "targets": 0 },
+          {
+            "width": "60%",
+            "targets": 1,
+            "data": "skill_level",
+            "render": function ( data, type, row, meta ) {
+              return '<div class="progress">'+
+                        '<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width:' + data + '%" aria-valuenow="' + data + '" aria-valuemin="0" aria-valuemax="100"></div>' +
+                      '</div>';
+            }
+          }
+        ],
+        "columns": [
+            { "data": "skill" },
+            { "data": "level" }
+        ]
   });
 
   //Add listener to Datatables searchbox override
