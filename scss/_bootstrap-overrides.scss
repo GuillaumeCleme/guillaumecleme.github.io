@@ -22,3 +22,18 @@ a {
     color: lighten($primary, 50%);
   }
 }
+
+.form-control {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid $gray-400;
+  border-radius: 0;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid $gray-400;
+    border-radius: 0;
+}
