@@ -28,8 +28,10 @@
   //Bind Datatables
   $('#skillsTable').DataTable({
         "ajax": "js/skills.json",
-        "dom": '<<"input-group mb-3 bg-gray-100" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f p>' +
-          '<t>>',
+        "dom": '<"form-row bg-gray-100"' +
+               '<"form-group col-md-6 mb-0 pl-0" <"input-group" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f>>' +
+               '<"form-group col-md-6 mb-0" p>>' +
+               '<t>',
         "language": {
           "search": "",
           "searchPlaceholder": "Search skills"
