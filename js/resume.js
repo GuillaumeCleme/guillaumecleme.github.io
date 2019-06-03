@@ -30,7 +30,7 @@
         "ajax": "js/skills.json",
         "dom": '<"form-row bg-gray-100"' +
                '<"form-group col-md-6 mb-0 pl-0" <"input-group" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f>>' +
-               '<"form-group col-md-6 mb-0" p>>' +
+               '<"form-group col-md-6 mb-0 pl-0 pl-md-1" p>>' +
                '<t>',
         "language": {
           "search": "",
@@ -39,7 +39,10 @@
         "pageLength": 15,
         "info": false,
         "columnDefs": [
-          { "width": "40%", "targets": 0 },
+          {
+            "width": "40%",
+            "targets": 0
+          },
           {
             "width": "60%",
             "targets": 1,

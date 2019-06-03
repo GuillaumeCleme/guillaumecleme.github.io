@@ -215,14 +215,31 @@ div.dataTables_wrapper div.dataTables_filter input {
 
 div.dataTables_wrapper div.dataTables_paginate {
   border: 0;
-  text-align: right;
   border-radius: 0;
   background: #f8f9fa;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  div.dataTables_wrapper div.dataTables_paginate {
+    text-align: right;
+  }
 }
 
 div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   margin-bottom: 0px;
   margin-top: 0.2rem;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
 }
 
 .bg-primary {

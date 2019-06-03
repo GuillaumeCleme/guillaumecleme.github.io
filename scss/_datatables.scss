@@ -4,12 +4,19 @@ div.dataTables_wrapper {
   }
   div.dataTables_paginate {
     border: 0;
-    text-align: right;
     border-radius: 0;
     background: $gray-100;
+    text-align: left;
+    @media (min-width: 768px) {
+        text-align: right;
+    }
     ul.pagination {
         margin-bottom: 0px;
         margin-top: 0.2rem;
+        justify-content: flex-start;
+        @media (min-width: 768px) {
+            justify-content: flex-end;
+        }
     }
   }
 }
