@@ -199,14 +199,15 @@ section.resume-section .resume-item .resume-date {
   border-top: none;
 }
 
-.grow {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.grow:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+@media (min-width: 992px) {
+  .grow {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .grow:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
 
 div.dataTables_wrapper div.dataTables_filter input {
