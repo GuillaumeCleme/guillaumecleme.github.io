@@ -34,6 +34,7 @@
           "search": "",
           "searchPlaceholder": "Search skills"
         },
+        "pageLength": 25,
         "info": false,
         "columnDefs": [
           { "width": "40%", "targets": 0 },

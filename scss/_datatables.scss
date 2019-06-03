@@ -5,6 +5,16 @@ div.dataTables_wrapper {
   div.dataTables_paginate {
     border: 0;
     border-bottom: 1px solid $gray-400;
+    border-left: 1px solid $gray-400;
+    border-right: 1px solid $gray-400;
     border-radius: 0;
+    margin-top: 1rem;
+    @media (min-width: 580px) {
+      margin-top: 0;
+    }
+    ul.pagination {
+        margin-bottom: 0px;
+        margin-top: 0.2rem;
+    }
   }
 }

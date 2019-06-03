@@ -26,16 +26,24 @@ a {
 .form-control {
   border: 0;
   outline: 0;
-  background: transparent;
+  background: $gray-100;
   border-bottom: 1px solid $gray-400;
+  border-right: 1px solid $gray-400;
+  @media (min-width: 580px) {
+    border-right: 0;
+  }
   border-radius: 0;
 }
 
 .input-group-text {
-    background-color: transparent;
+    background-color: $gray-400;
     border: 0;
     border-bottom: 1px solid $gray-400;
     border-radius: 0;
+}
+
+.input-group-prepend{
+  border-left: 1px solid $gray-400;
 }
 
 label {
@@ -56,6 +64,7 @@ label {
       padding: 0 .75rem;
       border: 0;
       line-height: 1.5;
-      color: $gray-600;
+      color: $gray-700;
+      font-weight: 900;
   }
 }
