@@ -26,9 +26,10 @@
   });
 
   //Bind Datatables
-  var dataTable = $('#example').DataTable({
+  $('#skillsTable').DataTable({
         "ajax": "js/skills.json",
-        "dom": '<<"input-group mb-3" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f><t>>',
+        "dom": '<<"input-group mb-3" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> fp>' +
+          '<t>>',
         "language": {
           "search": "",
           "searchPlaceholder": "Search skills"

@@ -41,3 +41,21 @@ a {
 label {
     margin-bottom: 0
 }
+
+.page-item {
+  &.active .page-link{
+      color: $primary;
+      background-color: $gray-400;
+  }
+  &.disabled .page-link{
+      color: $gray-400;
+      background-color: $white;
+  }
+
+  .page-link {
+      padding: 0 .75rem;
+      border: 0;
+      line-height: 1.5;
+      color: $gray-600;
+  }
+}

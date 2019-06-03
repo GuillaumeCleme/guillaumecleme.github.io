@@ -213,6 +213,12 @@ div.dataTables_wrapper div.dataTables_filter input {
   margin-left: 0;
 }
 
+div.dataTables_wrapper div.dataTables_paginate {
+  border: 0;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+}
+
 .bg-primary {
   background-color: #1f1f1f !important;
 }
@@ -254,4 +260,21 @@ a:hover, a:focus, a:active {
 
 label {
   margin-bottom: 0;
+}
+
+.page-item.active .page-link {
+  color: #1f1f1f;
+  background-color: #ced4da;
+}
+
+.page-item.disabled .page-link {
+  color: #ced4da;
+  background-color: #fff;
+}
+
+.page-item .page-link {
+  padding: 0 .75rem;
+  border: 0;
+  line-height: 1.5;
+  color: #868e96;
 }

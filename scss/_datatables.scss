@@ -1,3 +1,10 @@
-div.dataTables_wrapper div.dataTables_filter input {
+div.dataTables_wrapper {
+  div.dataTables_filter input {
     margin-left: 0;
+  }
+  div.dataTables_paginate {
+    border: 0;
+    border-bottom: 1px solid $gray-400;
+    border-radius: 0;
+  }
 }
