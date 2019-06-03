@@ -40,9 +40,6 @@ a {
     border-radius: 0;
 }
 
-.input-group-prepend{
-}
-
 label {
     margin-bottom: 0
 }
@@ -50,7 +47,7 @@ label {
 .page-item {
   &.active .page-link{
       color: $primary;
-      background-color: $gray-400;
+      background-color: $gray-200;
   }
   &.disabled .page-link{
       color: $gray-400;
