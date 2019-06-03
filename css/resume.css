@@ -215,17 +215,9 @@ div.dataTables_wrapper div.dataTables_filter input {
 
 div.dataTables_wrapper div.dataTables_paginate {
   border: 0;
-  border-bottom: 1px solid #ced4da;
-  border-left: 1px solid #ced4da;
-  border-right: 1px solid #ced4da;
+  text-align: right;
   border-radius: 0;
-  margin-top: 1rem;
-}
-
-@media (min-width: 580px) {
-  div.dataTables_wrapper div.dataTables_paginate {
-    margin-top: 0;
-  }
+  background: #f8f9fa;
 }
 
 div.dataTables_wrapper div.dataTables_paginate ul.pagination {
@@ -239,6 +231,10 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .bg-secondary {
   background-color: #ffd966 !important;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa !important;
 }
 
 .text-primary {
@@ -261,26 +257,13 @@ a:hover, a:focus, a:active {
   border: 0;
   outline: 0;
   background: #f8f9fa;
-  border-bottom: 1px solid #ced4da;
-  border-right: 1px solid #ced4da;
   border-radius: 0;
-}
-
-@media (min-width: 580px) {
-  .form-control {
-    border-right: 0;
-  }
 }
 
 .input-group-text {
   background-color: #ced4da;
   border: 0;
-  border-bottom: 1px solid #ced4da;
   border-radius: 0;
-}
-
-.input-group-prepend {
-  border-left: 1px solid #ced4da;
 }
 
 label {
@@ -294,7 +277,7 @@ label {
 
 .page-item.disabled .page-link {
   color: #ced4da;
-  background-color: #fff;
+  background-color: #f8f9fa;
 }
 
 .page-item .page-link {
@@ -302,5 +285,18 @@ label {
   border: 0;
   line-height: 1.5;
   color: #495057;
+  background-color: #f8f9fa;
   font-weight: 900;
+}
+
+.table {
+  color: #495057;
+}
+
+.table thead th {
+  border-bottom: 0;
+}
+
+.table td, .table th {
+  border-top: 0;
 }

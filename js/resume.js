@@ -28,13 +28,13 @@
   //Bind Datatables
   $('#skillsTable').DataTable({
         "ajax": "js/skills.json",
-        "dom": '<<"input-group mb-3" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> fp>' +
+        "dom": '<<"input-group mb-3 bg-gray-100" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f p>' +
           '<t>>',
         "language": {
           "search": "",
           "searchPlaceholder": "Search skills"
         },
-        "pageLength": 25,
+        "pageLength": 15,
         "info": false,
         "columnDefs": [
           { "width": "40%", "targets": 0 },
@@ -44,7 +44,7 @@
             "data": "skill_level",
             "render": function ( data, type, row, meta ) {
               return '<div class="progress">'+
-                        '<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width:' + data + '%" aria-valuenow="' + data + '" aria-valuemin="0" aria-valuemax="100"></div>' +
+                        '<div class="progress-bar bg-warning" role="progressbar" style="width:' + data + '%" aria-valuenow="' + data + '" aria-valuemin="0" aria-valuemax="100">' + data + '%</div>' +
                       '</div>';
             }
           }

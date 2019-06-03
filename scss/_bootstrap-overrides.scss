@@ -6,6 +6,10 @@
   background-color: $secondary !important;
 }
 
+.bg-gray-100{
+  background-color: $gray-100 !important;
+}
+
 .text-primary {
   color: $primary !important;
 }
@@ -27,23 +31,16 @@ a {
   border: 0;
   outline: 0;
   background: $gray-100;
-  border-bottom: 1px solid $gray-400;
-  border-right: 1px solid $gray-400;
-  @media (min-width: 580px) {
-    border-right: 0;
-  }
   border-radius: 0;
 }
 
 .input-group-text {
     background-color: $gray-400;
     border: 0;
-    border-bottom: 1px solid $gray-400;
     border-radius: 0;
 }
 
 .input-group-prepend{
-  border-left: 1px solid $gray-400;
 }
 
 label {
@@ -57,7 +54,7 @@ label {
   }
   &.disabled .page-link{
       color: $gray-400;
-      background-color: $white;
+      background-color: $gray-100;
   }
 
   .page-link {
@@ -65,6 +62,17 @@ label {
       border: 0;
       line-height: 1.5;
       color: $gray-700;
+      background-color: $gray-100;
       font-weight: 900;
   }
+}
+
+.table {
+    color: $gray-700;
+    thead th {
+        border-bottom: 0;
+    }
+    td, th {
+        border-top: 0;
+    }
 }
