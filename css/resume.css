@@ -88,6 +88,10 @@ p.lead {
   color: #1f1f1f;
 }
 
+.dev-icons a {
+  color: #495057;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -195,14 +199,68 @@ section.resume-section .resume-item .resume-date {
   border-top: none;
 }
 
-.grow {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+@media (min-width: 992px) {
+  .grow {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .grow:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
 
-.grow:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 0;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+  border: 0;
+  border-radius: 0;
+  background: #f8f9fa;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  div.dataTables_wrapper div.dataTables_paginate {
+    text-align: right;
+  }
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  margin-bottom: 0px;
+  margin-top: 0.2rem;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  width: 80%;
+}
+
+@media (min-width: 992px) {
+  div.dataTables_wrapper div.dataTables_filter {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.dataTables_wrapper div.dataTables_filter {
+    width: 90%;
+  }
+}
+
+div.dataTables_wrapper div.dataTables_filter input, div.dataTables_wrapper div.dataTables_filter label {
+  width: 100%;
 }
 
 .bg-primary {
@@ -211,6 +269,10 @@ section.resume-section .resume-item .resume-date {
 
 .bg-secondary {
   background-color: #ffd966 !important;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa !important;
 }
 
 .text-primary {
@@ -226,5 +288,53 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: black;
+  color: #9f9f9f;
+}
+
+.form-control {
+  border: 0;
+  outline: 0;
+  background: #f8f9fa;
+  border-radius: 0;
+}
+
+.input-group-text {
+  background-color: #ced4da;
+  border: 0;
+  border-radius: 0;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+.page-item.active .page-link {
+  color: #1f1f1f;
+  background-color: #e9ecef;
+}
+
+.page-item.disabled .page-link {
+  color: #ced4da;
+  background-color: #f8f9fa;
+}
+
+.page-item .page-link {
+  padding: 0 .75rem;
+  border: 0;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #f8f9fa;
+  font-weight: 900;
+}
+
+.table {
+  color: #495057;
+}
+
+.table thead th {
+  border-bottom: 0;
+}
+
+.table td, .table th {
+  border-top: 0;
 }

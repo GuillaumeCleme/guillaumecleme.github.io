@@ -6,6 +6,10 @@
   background-color: $secondary !important;
 }
 
+.bg-gray-100{
+  background-color: $gray-100 !important;
+}
+
 .text-primary {
   color: $primary !important;
 }
@@ -19,6 +23,53 @@ a {
   &:hover,
   &:focus,
   &:active {
-    color: darken($primary, 15%);
+    color: lighten($primary, 50%);
   }
+}
+
+.form-control {
+  border: 0;
+  outline: 0;
+  background: $gray-100;
+  border-radius: 0;
+}
+
+.input-group-text {
+    background-color: $gray-400;
+    border: 0;
+    border-radius: 0;
+}
+
+label {
+    margin-bottom: 0
+}
+
+.page-item {
+  &.active .page-link{
+      color: $primary;
+      background-color: $gray-200;
+  }
+  &.disabled .page-link{
+      color: $gray-400;
+      background-color: $gray-100;
+  }
+
+  .page-link {
+      padding: 0 .75rem;
+      border: 0;
+      line-height: 1.5;
+      color: $gray-700;
+      background-color: $gray-100;
+      font-weight: 900;
+  }
+}
+
+.table {
+    color: $gray-700;
+    thead th {
+        border-bottom: 0;
+    }
+    td, th {
+        border-top: 0;
+    }
 }

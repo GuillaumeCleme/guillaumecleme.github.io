@@ -36,9 +36,10 @@ section.resume-section {
 }
 
 .grow {
-  transition: all .3s ease-in-out;
-  //TODO Media Query, disable on mobile?
-  &:hover {
-     transform: scale(1.1);
-   }
+  @media (min-width: 992px) {
+    transition: all .3s ease-in-out;
+    &:hover {
+       transform: scale(1.1);
+     }
+  }
 }
