@@ -243,6 +243,26 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   }
 }
 
+div.dataTables_wrapper div.dataTables_filter {
+  width: 80%;
+}
+
+@media (min-width: 992px) {
+  div.dataTables_wrapper div.dataTables_filter {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.dataTables_wrapper div.dataTables_filter {
+    width: 90%;
+  }
+}
+
+div.dataTables_wrapper div.dataTables_filter input, div.dataTables_wrapper div.dataTables_filter label {
+  width: 100%;
+}
+
 .bg-primary {
   background-color: #1f1f1f !important;
 }
