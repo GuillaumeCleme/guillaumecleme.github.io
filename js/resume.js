@@ -25,4 +25,38 @@
     target: '#sideNav'
   });
 
+  //Bind Datatables
+  $('#skillsTable').DataTable({
+        "ajax": "js/skills.json",
+        "dom": '<"form-row bg-gray-100"' +
+               '<"form-group col-md-6 mb-0 pl-0" <"input-group" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f>>' +
+               '<"form-group col-md-6 mb-0 pl-0 pl-md-1" p>>' +
+               '<t>',
+        "language": {
+          "search": "",
+          "searchPlaceholder": "Search skills"
+        },
+        "pageLength": 14,
+        "info": false,
+        "columnDefs": [
+          {
+            "width": "40%",
+            "targets": 0
+          },
+          {
+            "width": "60%",
+            "targets": 1,
+            "data": "skill_level",
+            "render": function ( data, type, row, meta ) {
+              return '<div class="progress">'+
+                        '<div class="progress-bar bg-warning" role="progressbar" style="width:' + data + '%" aria-valuenow="' + data + '" aria-valuemin="0" aria-valuemax="100">' + data + '%</div>' +
+                      '</div>';
+            }
+          }
+        ],
+        "columns": [
+            { "data": "skill" },
+            { "data": "level" }
+        ]
+  });
 })(jQuery); // End of use strict

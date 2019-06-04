@@ -56,6 +56,10 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
 
+  <!-- Datatables CSS -->
+  <link href="vendor/datatables/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+  <link href="vendor/datatables/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet" />
 
@@ -89,13 +93,13 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
         </li>
-        <!-- TODO
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
+        <!-- TODO
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li>
@@ -114,45 +118,70 @@
         <h1 class="mb-0">Guillaume Clement</h1>
         <hr class="hr-header"></hr>
         <div class="subheading mb-5">Ottawa, ON · (613) 761-2781 ·
-          <a href="mailto:clement.guillaume@live.ca" class="text-secondary">clement.guillaume@live.ca</a>
+          <a href="mailto:clement.guillaume@live.ca">clement.guillaume@live.ca</a>
         </div>
         <p class="lead mb-5">I am an experienced technology professional with over 10 years of technical experience as an analyst, lead developer, architect, and director specializing in Adobe Enterprise technology.
 With a broad understanding of enterprise technology, a deep technical skillset, and focus on software related delivery methodologies, I spend most of my time applying my technical and management skills to larger teams to efficiently develop and deliver scalable solutions using iterative methodologies.
 </p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/gcl%C3%A9ment/" target="_blank" rel="noreferrer">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://twitter.com/GuillaumeC91" target="_blank" rel="noreferrer">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.facebook.com/GuillaumeC91" target="_blank" rel="noreferrer">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/GuillaumeC91/" target="_blank" rel="noreferrer">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://m.me/GuillaumeC91" target="_blank" rel="noreferrer">
-            <i class="fab fa-facebook-messenger"></i>
-          </a>
-          <a href="https://github.com/GuillaumeC91" target="_blank" rel="noreferrer">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://stackoverflow.com/users/3308078/GuillaumeC91" target="_blank" rel="noreferrer">
-            <i class="fab fa-stack-overflow"></i>
-          </a>
-          <a href="https://www.youracclaim.com/users/guillaume-clement.13abae4b/badges" target="_blank">
-            <i class="fab fa-adobe"></i>
-          </a>
-          <a href="https://www.meetup.com/members/238095920/" target="_blank" rel="noreferrer">
-            <i class="fab fa-meetup"></i>
-          </a>
-          <a href="https://medium.com/@GuillaumeC91" target="_blank" rel="noreferrer">
-            <i class="fab fa-medium"></i>
-          </a>
-          <a href="https://www.goodreads.com/GuillaumeC91" target="_blank" rel="noreferrer">
-            <i class="fab fa-goodreads"></i>
-          </a>
+
+        <div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/gcl%C3%A9ment/" target="_blank" rel="noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/GuillaumeC91" target="_blank" rel="noreferrer">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/GuillaumeC91" target="_blank" rel="noreferrer">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/GuillaumeC91/" target="_blank" rel="noreferrer">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://m.me/GuillaumeC91" target="_blank" rel="noreferrer">
+                <i class="fab fa-facebook-messenger"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/GuillaumeC91" target="_blank" rel="noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://stackoverflow.com/users/3308078/GuillaumeC91" target="_blank" rel="noreferrer">
+                <i class="fab fa-stack-overflow"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.youracclaim.com/users/guillaume-clement.13abae4b/badges" target="_blank">
+                <i class="fab fa-adobe"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.meetup.com/members/238095920/" target="_blank" rel="noreferrer">
+                <i class="fab fa-meetup"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://medium.com/@GuillaumeC91" target="_blank" rel="noreferrer">
+                <i class="fab fa-medium"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.goodreads.com/GuillaumeC91" target="_blank" rel="noreferrer">
+                <i class="fab fa-goodreads"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -209,7 +238,7 @@ With a broad understanding of enterprise technology, a deep technical skillset, 
         </div>
 
         <div class="w-100 my-3">
-          <h3 class="mb-3">Skills</h2>
+          <h3 class="mb-3">Competence</h2>
           <div class="row">
             <div class="col-12 col-lg-6">
               <ul class="fa-ul mb-0">
@@ -450,9 +479,6 @@ With a broad understanding of enterprise technology, a deep technical skillset, 
 
     </section>
 
-    <!-- TODO
-
-    <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
@@ -460,37 +486,75 @@ With a broad understanding of enterprise technology, a deep technical skillset, 
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">University of Colorado Boulder</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science - Web Development Track</div>
-            <p>GPA: 3.23</p>
+            <h3 class="mb-0">La Cite Collegiale</h3>
+            <div class="subheading mb-3">Computer Systems Technology</div>
+            <p>
+              This program allowed me to acquire the necessary skills and knowledge to install, configure, troubleshoot and manage computer systems, devices, and local/wide area networks.
+            </p>
+            <p>Classes Included:</p>
+            <ul class="fa-ul">
+              <li>
+                <i class="fa-li fa fa-graduation-cap"></i>
+                Programming and Algorithms (Level 1 & 2)
+              </li>
+              <li>
+                <i class="fa-li fa fa-graduation-cap"></i>
+                Algebra and Trigonometry applications
+              </li>
+              <li>
+                <i class="fa-li fa fa-graduation-cap"></i>
+                Operating Systems architecture
+              </li>
+              <li>
+                <i class="fa-li fa fa-graduation-cap"></i>
+                UNIX and Windows server administration
+              </li>
+              <li>
+                <i class="fa-li fa fa-graduation-cap"></i>
+                Database architecture and administration
+              </li>
+              <li>
+                <i class="fa-li fa fa-graduation-cap"></i>
+                Network Security and Hardening
+              </li>
+              <li>
+                <i class="fa-li fa fa-graduation-cap"></i>
+                LAN and WAN routing architecture (<a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html" target="_blank" rel="noreferrer">Cisco CCNA</a>)
+              </li>
+            </ul>
+            <p>
+              It covered topics such as the design and implementation of client/server models, data storage, web application principles, domain and federation services, object-oriented programming, task automation and scripting, administration and configuration of networking peripherals, and network security.
+            </p>
+            <div class="sublead mt-2">
+                <i class="fas fa-map-marker-alt"></i>
+                Ottawa, ON |
+                <i class="fas fa-link"></i>
+                <a href="https://www.collegelacite.ca/" target="_blank" rel="noreferrer">collegelacite.ca</a>
+            </div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2006 - May 2010</span>
+            <span class="text-primary">January 2010 - April 2012</span>
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">James Buchanan High School</h3>
-            <div class="subheading mb-3">Technology Magnet Program</div>
-            <p>GPA: 3.56</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
-          </div>
-        </div>
-
       </div>
     </section>
-
-    <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
+        <!-- <div class="subheading mb-3">Programming Languages &amp; Tools</div> -->
+        <table id="skillsTable" class="table dt-responsive nowrap" style="width:100%">
+          <thead>
+              <tr>
+                  <th>Skill</th>
+                  <th>Proficiency</th>
+              </tr>
+          </thead>
+          <tbody />
+        </table>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+
+        <!--
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-html5"></i>
@@ -544,10 +608,11 @@ With a broad understanding of enterprise technology, a deep technical skillset, 
           <li>
             <i class="fa-li fa fa-check"></i>
             Agile Development &amp; Scrum</li>
-        </ul>
+        </ul> -->
       </div>
     </section>
 
+<!-- TODO
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
@@ -603,6 +668,12 @@ With a broad understanding of enterprise technology, a deep technical skillset, 
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Datatables JavaScript -->
+  <script src="vendor/datatables/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="vendor/datatables/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="vendor/datatables/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
