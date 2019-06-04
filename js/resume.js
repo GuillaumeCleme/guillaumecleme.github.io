@@ -27,7 +27,7 @@
 
   //Bind Datatables
   $('#skillsTable').DataTable({
-        "ajax": "js/skills.json",
+        "ajax": "js/skills.min.json",
         "dom": '<"form-row bg-gray-100"' +
                '<"form-group col-md-6 mb-0 pl-0" <"input-group" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f>>' +
                '<"form-group col-md-6 mb-0 pl-0 pl-md-1" p>>' +
