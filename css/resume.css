@@ -1,5 +1,5 @@
 /*!
- * Guillaume Clement - Resume v0.0.6 (https://guillaumec91.github.io)
+ * Guillaume Clement - Resume v0.0.7 (https://guillaumec91.github.io)
  * Copyright 2013-2019 Guillaume Clement
  * Licensed under MIT (https://github.com/GuillaumeC91/guillaumec91.github.io/blob/master/LICENSE)
  */

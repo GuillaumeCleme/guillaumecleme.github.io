@@ -1,7 +1,7 @@
 {
     "title": "Guillaume Clement - Resume",
     "name": "guillaumec91.github.io",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "scripts": {
         "start": "gulp watch"
     },
