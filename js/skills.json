@@ -1,519 +1,648 @@
 {
   "data": [
     {
-      "skill": "Adobe Acrobat",
+      "skillLong": "Adobe Acrobat",
+      "skillShort": "Adobe Acrobat",
       "level": 90
     },
     {
-      "skill": "Adobe Experience Manager (AEM) Forms",
+      "skillLong": "Adobe Experience Manager (AEM) Forms",
+      "skillShort": "AEM Forms",
       "level": 100
     },
     {
-      "skill": "Adobe Experience Manager (AEM) Sites",
+      "skillLong": "Adobe Experience Manager (AEM) Sites",
+      "skillShort": "AEM Sites",
       "level": 95
     },
     {
-      "skill": "Adobe LiveCycle",
+      "skillLong": "Adobe LiveCycle",
+      "skillShort": "Adobe LiveCycle",
       "level": 100
     },
     {
-      "skill": "Adobe LiveCycle Designer",
+      "skillLong": "Adobe LiveCycle Designer",
+      "skillShort": "LiveCycle Designer",
       "level": 100
     },
     {
-      "skill": "Adobe LiveCycle Workbench",
+      "skillLong": "Adobe LiveCycle Workbench",
+      "skillShort": "LiveCycle Workbench",
       "level": 100
     },
     {
-      "skill": "Adobe Experience Manager (AEM) Assets",
+      "skillLong": "Adobe Experience Manager (AEM) Assets",
+      "skillShort": "AEM Assets",
       "level": 90
     },
     {
-      "skill": "Adobe Analytics",
+      "skillLong": "Adobe Analytics",
+      "skillShort": "Adobe Analytics",
       "level": 70
     },
     {
-      "skill": "Adobe Target",
+      "skillLong": "Adobe Target",
+      "skillShort": "Adobe Target",
       "level": 60
     },
     {
-      "skill": "Amazon Web Services (AWS) EC2",
+      "skillLong": "Amazon Web Services (AWS) EC2",
+      "skillShort": "AWS EC2",
       "level": 75
     },
     {
-      "skill": "Amazon Web Services (AWS) S3",
+      "skillLong": "Amazon Web Services (AWS) S3",
+      "skillShort": "AWS S3",
       "level": 75
     },
     {
-      "skill": "Amazon Web Services (AWS) Beanstalk",
+      "skillLong": "Amazon Web Services (AWS) Beanstalk",
+      "skillShort": "AWS Beanstalk",
       "level": 50
     },
     {
-      "skill": "Amazon Web Services (AWS) Beanstalk",
+      "skillLong": "Amazon Web Services (AWS) Beanstalk",
+      "skillShort": "AWS Beanstalk",
       "level": 50
     },
     {
-      "skill": "Amazon Web Services (AWS) Lambda",
+      "skillLong": "Amazon Web Services (AWS) Lambda",
+      "skillShort": "AWS Lambda",
       "level": 60
     },
     {
-      "skill": "Amazon Web Services (AWS) Document DB",
+      "skillLong": "Amazon Web Services (AWS) Document DB",
+      "skillShort": "AWS Document DB",
       "level": 60
     },
     {
-      "skill": "Amazon Web Services (AWS) RDS",
+      "skillLong": "Amazon Web Services (AWS) RDS",
+      "skillShort": "AWS RDS",
       "level": 75
     },
     {
-      "skill": "Amazon Web Services (AWS) Step Functions",
+      "skillLong": "Amazon Web Services (AWS) Step Functions",
+      "skillShort": "AWS Step Functions",
       "level": 60
     },
     {
-      "skill": "Amazon Web Services (AWS) IoT Core",
+      "skillLong": "Amazon Web Services (AWS) IoT Core",
+      "skillShort": "AWS IoT Core",
       "level": 50
     },
     {
-      "skill": "Amazon Web Services (AWS) Greengrass",
+      "skillLong": "Amazon Web Services (AWS) Greengrass",
+      "skillShort": "AWS Greengrass",
       "level": 30
     },
     {
-      "skill": "Amazon Web Services (AWS) CodeBuild",
+      "skillLong": "Amazon Web Services (AWS) CodeBuild",
+      "skillShort": "AWS CodeBuild",
       "level": 60
     },
     {
-      "skill": "Agile",
+      "skillLong": "Agile Methodologies",
+      "skillShort": "Agile Methodologies",
       "level": 80
     },
     {
-      "skill": "Android",
+      "skillLong": "Android",
+      "skillShort": "Android",
       "level": 30
     },
     {
-      "skill": "Angular",
+      "skillLong": "Angular",
+      "skillShort": "Angular",
       "level": 45
     },
     {
-      "skill": "AngularJS",
+      "skillLong": "AngularJS",
+      "skillShort": "AngularJS",
       "level": 70
     },
     {
-      "skill": "Ant",
+      "skillLong": "Ant",
+      "skillShort": "Ant",
       "level": 70
     },
     {
-      "skill": "Apache",
+      "skillLong": "Apache",
+      "skillShort": "Apache",
       "level": 60
     },
     {
-      "skill": "Asana",
+      "skillLong": "Asana",
+      "skillShort": "Asana",
       "level": 50
     },
     {
-      "skill": "Bash",
+      "skillLong": "Bash",
+      "skillShort": "Bash",
       "level": 85
     },
     {
-      "skill": "Bower",
+      "skillLong": "Bower",
+      "skillShort": "Bower",
       "level": 85
     },
     {
-      "skill": "Chef",
+      "skillLong": "Chef",
+      "skillShort": "Chef",
       "level": 65
     },
     {
-      "skill": "CI/CD",
+      "skillLong": "CI/CD",
+      "skillShort": "CI/CD",
       "level": 85
     },
     {
-      "skill": "Cisco (Routers & Switches)",
+      "skillLong": "Cisco (Routers & Switches)",
+      "skillShort": "Cisco",
       "level": 80
     },
     {
-      "skill": "Closure",
+      "skillLong": "Closure",
+      "skillShort": "Closure",
       "level": 45
     },
     {
-      "skill": "Cordova (PhoneGap)",
+      "skillLong": "Cordova (PhoneGap)",
+      "skillShort": "Cordova",
       "level": 60
     },
     {
-      "skill": "CQ",
+      "skillLong": "CQ",
+      "skillShort": "CQ",
       "level": 95
     },
     {
-      "skill": "CSS",
+      "skillLong": "CSS",
+      "skillShort": "CSS",
       "level": 80
     },
     {
-      "skill": "Cucumber",
+      "skillLong": "Cucumber",
+      "skillShort": "Cucumber",
       "level": 50
     },
     {
-      "skill": "Dart",
+      "skillLong": "Dart",
+      "skillShort": "Dart",
       "level": 30
     },
     {
-      "skill": "DevOps",
+      "skillLong": "DevOps",
+      "skillShort": "DevOps",
       "level": 85
     },
     {
-      "skill": "Docker",
+      "skillLong": "Docker",
+      "skillShort": "Docker",
       "level": 60
     },
     {
-      "skill": "Eclipse",
+      "skillLong": "Eclipse",
+      "skillShort": "Eclipse",
       "level": 90
     },
     {
-      "skill": "EJB",
+      "skillLong": "EJB",
+      "skillShort": "EJB",
       "level": 70
     },
     {
-      "skill": "Electon",
+      "skillLong": "Electon",
+      "skillShort": "Electon",
       "level": 60
     },
     {
-      "skill": "Felix",
+      "skillLong": "Felix",
+      "skillShort": "Felix",
       "level": 95
     },
     {
-      "skill": "Flutter",
+      "skillLong": "Flutter",
+      "skillShort": "Flutter",
       "level": 45
     },
     {
-      "skill": "GIT",
+      "skillLong": "GIT",
+      "skillShort": "GIT",
       "level": 90
     },
     {
-      "skill": "Go",
+      "skillLong": "Go",
+      "skillShort": "Go",
       "level": 60
     },
     {
-      "skill": "Google Cloud Platform (GCP) Compute Engine",
+      "skillLong": "Google Cloud Platform (GCP) Compute Engine",
+      "skillShort": "GCP Compute Engine",
       "level": 60
     },
     {
-      "skill": "Google Cloud Platform (GCP) App Engine",
+      "skillLong": "Google Cloud Platform (GCP) App Engine",
+      "skillShort": "GCP App Engine",
       "level": 75
     },
     {
-      "skill": "Google Cloud Platform (GCP) Cloud SDK",
+      "skillLong": "Google Cloud Platform (GCP) Cloud SDK",
+      "skillShort": "GCP Cloud SDK",
       "level": 75
     },
     {
-      "skill": "Google Cloud Platform (GCP) Cloud Storage",
+      "skillLong": "Google Cloud Platform (GCP) Cloud Storage",
+      "skillShort": "GCP Cloud Storage",
       "level": 60
     },
     {
-      "skill": "Google Cloud Platform (GCP) BigQuery",
+      "skillLong": "Google Cloud Platform (GCP) BigQuery",
+      "skillShort": "GCP BigQuery",
       "level": 40
     },
     {
-      "skill": "Google Analytics",
+      "skillLong": "Google Analytics",
+      "skillShort": "Google Analytics",
       "level": 60
     },
     {
-      "skill": "Google Ads",
+      "skillLong": "Google Ads",
+      "skillShort": "Google Ads",
       "level": 50
     },
     {
-      "skill": "Groovy",
+      "skillLong": "Groovy",
+      "skillShort": "Groovy",
       "level": 45
     },
     {
-      "skill": "HTML",
+      "skillLong": "HTML",
+      "skillShort": "HTML",
       "level": 90
     },
     {
-      "skill": "HyperLedger",
+      "skillLong": "HyperLedger",
+      "skillShort": "HyperLedger",
       "level": 30
     },
     {
-      "skill": "IaC (Infrastructure As Code)",
+      "skillLong": "IaC (Infrastructure As Code)",
+      "skillShort": "IaC",
       "level": 45
     },
     {
-      "skill": "IIS",
+      "skillLong": "IIS",
+      "skillShort": "IIS",
       "level": 40
     },
     {
-      "skill": "IntelliJ",
+      "skillLong": "IntelliJ",
+      "skillShort": "IntelliJ",
       "level": 60
     },
     {
-      "skill": "JackRabbit",
+      "skillLong": "JackRabbit",
+      "skillShort": "JackRabbit",
       "level": 75
     },
     {
-      "skill": "Java",
+      "skillLong": "Java",
+      "skillShort": "Java",
       "level": 90
     },
     {
-      "skill": "JBoss",
+      "skillLong": "JBoss",
+      "skillShort": "JBoss",
       "level": 75
     },
     {
-      "skill": "Jetty",
+      "skillLong": "Jetty",
+      "skillShort": "Jetty",
       "level": 80
     },
     {
-      "skill": "Jira",
+      "skillLong": "Jira",
+      "skillShort": "Jira",
       "level": 85
     },
     {
-      "skill": "jQuery",
+      "skillLong": "jQuery",
+      "skillShort": "jQuery",
       "level": 90
     },
     {
-      "skill": "JSON",
+      "skillLong": "JSON",
+      "skillShort": "JSON",
       "level": 90
     },
     {
-      "skill": "JUnit",
+      "skillLong": "JUnit",
+      "skillShort": "JUnit",
       "level": 85
     },
     {
-      "skill": "Kerberos",
+      "skillLong": "Kerberos",
+      "skillShort": "Kerberos",
       "level": 90
     },
     {
-      "skill": "Kubernetes",
+      "skillLong": "Kubernetes",
+      "skillShort": "Kubernetes",
       "level": 60
     },
     {
-      "skill": "Kotlin",
+      "skillLong": "Kotlin",
+      "skillShort": "Kotlin",
       "level": 60
     },
     {
-      "skill": "LDAP",
+      "skillLong": "LDAP",
+      "skillShort": "LDAP",
       "level": 85
     },
     {
-      "skill": "LEAN",
+      "skillLong": "LEAN",
+      "skillShort": "LEAN",
       "level": 65
     },
     {
-      "skill": "LESS",
+      "skillLong": "LESS",
+      "skillShort": "LESS",
       "level": 60
     },
     {
-      "skill": "Linux",
+      "skillLong": "Linux",
+      "skillShort": "Linux",
       "level": 80
     },
     {
-      "skill": "Mac",
+      "skillLong": "Mac",
+      "skillShort": "Mac",
       "level": 60
     },
     {
-      "skill": "Maven",
+      "skillLong": "Maven",
+      "skillShort": "Maven",
       "level": 90
     },
     {
-      "skill": "Microsoft Azure",
+      "skillLong": "Microsoft Azure",
+      "skillShort": "Microsoft Azure",
       "level": 65
     },
     {
-      "skill": "Microsoft SQL Server",
+      "skillLong": "Microsoft SQL Server",
+      "skillShort": "MS SQL Server",
       "level": 65
     },
     {
-      "skill": "Mockito",
+      "skillLong": "Mockito",
+      "skillShort": "Mockito",
       "level": 70
     },
     {
-      "skill": "MongoDB",
+      "skillLong": "MongoDB",
+      "skillShort": "MongoDB",
       "level": 60
     },
     {
-      "skill": "MVC",
+      "skillLong": "MVC",
+      "skillShort": "MVC",
       "level": 75
     },
     {
-      "skill": "MVP",
+      "skillLong": "MVP",
+      "skillShort": "MVP",
       "level": 75
     },
     {
-      "skill": "MySQL",
+      "skillLong": "MySQL",
+      "skillShort": "MySQL",
       "level": 60
     },
     {
-      "skill": "Networking",
+      "skillLong": "Networking",
+      "skillShort": "Networking",
       "level": 75
     },
     {
-      "skill": "Node.js",
+      "skillLong": "Node.js",
+      "skillShort": "Node.js",
       "level": 60
     },
     {
-      "skill": "OAuth",
+      "skillLong": "OAuth",
+      "skillShort": "OAuth",
       "level": 50
     },
     {
-      "skill": "OData",
+      "skillLong": "OData",
+      "skillShort": "OData",
       "level": 50
     },
     {
-      "skill": "Oracle DB",
+      "skillLong": "Oracle DB",
+      "skillShort": "Oracle DB",
       "level": 60
     },
     {
-      "skill": "OSGI",
+      "skillLong": "OSGI",
+      "skillShort": "OSGI",
       "level": 95
     },
     {
-      "skill": "Packer",
+      "skillLong": "Packer",
+      "skillShort": "Packer",
       "level": 85
     },
     {
-      "skill": "PDF",
+      "skillLong": "PDF",
+      "skillShort": "PDF",
       "level": 95
     },
     {
-      "skill": "PhantomJS",
+      "skillLong": "PhantomJS",
+      "skillShort": "PhantomJS",
       "level": 55
     },
     {
-      "skill": "Pipelines",
+      "skillLong": "Pipelines",
+      "skillShort": "Pipelines",
       "level": 70
     },
     {
-      "skill": "Play",
+      "skillLong": "Play",
+      "skillShort": "Play",
       "level": 45
     },
     {
-      "skill": "Powershell",
+      "skillLong": "Powershell",
+      "skillShort": "Powershell",
       "level": 50
     },
     {
-      "skill": "Puppet",
+      "skillLong": "Puppet",
+      "skillShort": "Puppet",
       "level": 65
     },
     {
-      "skill": "Python",
+      "skillLong": "Python",
+      "skillShort": "Python",
       "level": 50
     },
     {
-      "skill": "RAD",
+      "skillLong": "RAD",
+      "skillShort": "RAD",
       "level": 75
     },
     {
-      "skill": "React",
+      "skillLong": "React",
+      "skillShort": "React",
       "level": 60
     },
     {
-      "skill": "Remoting",
+      "skillLong": "Remoting",
+      "skillShort": "Remoting",
       "level": 65
     },
     {
-      "skill": "REST",
+      "skillLong": "REST",
+      "skillShort": "REST",
       "level": 95
     },
     {
-      "skill": "SAML2.0",
+      "skillLong": "SAML2.0",
+      "skillShort": "SAML2.0",
       "level": 80
     },
     {
-      "skill": "SASS",
+      "skillLong": "SASS",
+      "skillShort": "SASS",
       "level": 75
     },
     {
-      "skill": "Scala",
+      "skillLong": "Scala",
+      "skillShort": "Scala",
       "level": 60
     },
     {
-      "skill": "SCRUM",
+      "skillLong": "SCRUM",
+      "skillShort": "SCRUM",
       "level": 90
     },
     {
-      "skill": "Selenuim",
+      "skillLong": "Selenuim",
+      "skillShort": "Selenuim",
       "level": 65
     },
     {
-      "skill": "Servers",
+      "skillLong": "Servers",
+      "skillShort": "Servers",
       "level": 90
     },
     {
-      "skill": "Sightly (HTL)",
+      "skillLong": "Sightly (HTL)",
+      "skillShort": "Sightly (HTL)",
       "level": 85
     },
     {
-      "skill": "Sling",
+      "skillLong": "Sling",
+      "skillShort": "Sling",
       "level": 95
     },
     {
-      "skill": "SOAP",
+      "skillLong": "SOAP",
+      "skillShort": "SOAP",
       "level": 75
     },
     {
-      "skill": "SVN",
+      "skillLong": "SVN",
+      "skillShort": "SVN",
       "level": 55
     },
     {
-      "skill": "Swagger",
+      "skillLong": "Swagger",
+      "skillShort": "Swagger",
       "level": 65
     },
     {
-      "skill": "TDD",
+      "skillLong": "TDD",
+      "skillShort": "TDD",
       "level": 70
     },
     {
-      "skill": "Terraform",
+      "skillLong": "Terraform",
+      "skillShort": "Terraform",
       "level": 45
     },
     {
-      "skill": "TravisCI",
+      "skillLong": "TravisCI",
+      "skillShort": "TravisCI",
       "level": 60
     },
     {
-      "skill": "Trello",
+      "skillLong": "Trello",
+      "skillShort": "Trello",
       "level": 85
     },
     {
-      "skill": "Unix",
+      "skillLong": "Unix",
+      "skillShort": "Unix",
       "level": 80
     },
     {
-      "skill": "Vagrant",
+      "skillLong": "Vagrant",
+      "skillShort": "Vagrant",
       "level": 95
     },
     {
-      "skill": "VueJS",
+      "skillLong": "VueJS",
+      "skillShort": "VueJS",
       "level": 65
     },
     {
-      "skill": "WebLogic",
+      "skillLong": "WebLogic",
+      "skillShort": "WebLogic",
       "level": 60
     },
     {
-      "skill": "WebPack",
+      "skillLong": "WebPack",
+      "skillShort": "WebPack",
       "level": 50
     },
     {
-      "skill": "WebShere",
+      "skillLong": "WebShere",
+      "skillShort": "WebShere",
       "level": 60
     },
     {
-      "skill": "Windows",
+      "skillLong": "Windows",
+      "skillShort": "Windows",
       "level": 95
     },
     {
-      "skill": "WireShark",
+      "skillLong": "WireShark",
+      "skillShort": "WireShark",
       "level": 80
     },
     {
-      "skill": "XDP",
+      "skillLong": "XDP",
+      "skillShort": "XDP",
       "level": 100
     },
     {
-      "skill": "XML",
+      "skillLong": "XML",
+      "skillShort": "XML",
       "level": 100
     },
     {
-      "skill": "XSD",
+      "skillLong": "XSD",
+      "skillShort": "XSD",
       "level": 90
     },
     {
-      "skill": "XSLT",
+      "skillLong": "XSLT",
+      "skillShort": "XSLT",
       "level": 75
     }
   ]
