@@ -280,7 +280,28 @@ div.dataTables_wrapper div.dataTables_filter input, div.dataTables_wrapper div.d
 }
 
 .text-secondary {
-  color: #ffd966 !important;
+  color: #495057 !important;
+}
+
+.btn-primary {
+  color: #1f1f1f;
+  background-color: #ffd966;
+  border-color: #ffd966;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #868e96;
+  border-color: #868e96;
+}
+
+.btn-secondary {
+  background-color: #495057;
+  border-color: #495057;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #868e96;
+  border-color: #868e96;
 }
 
 a {
