@@ -27,7 +27,7 @@
 
   //Bind Datatables
   $('#skillsTable').DataTable({
-        "ajax": "js/skills.json",
+        "ajax": "js/skills.min.json",
         "dom": '<"form-row bg-gray-100"' +
                '<"form-group col-md-6 mb-0 pl-0" <"input-group" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f>>' +
                '<"form-group col-md-6 mb-0 pl-0 pl-md-1" p>>' +
@@ -40,12 +40,21 @@
         "info": false,
         "columnDefs": [
           {
+            "targets": 0,
             "width": "40%",
-            "targets": 0
+            "responsivePriority": 3,
+            "className": "d-none d-md-block"
           },
           {
-            "width": "60%",
             "targets": 1,
+            "width": "60%",
+            "responsivePriority": 1,
+            "className": "d-md-none"
+          },
+          {
+            "targets": 2,
+            "width": "60%",
+            "responsivePriority": 2,
             "data": "skill_level",
             "render": function ( data, type, row, meta ) {
               return '<div class="progress">'+
@@ -55,7 +64,8 @@
           }
         ],
         "columns": [
-            { "data": "skill" },
+            { "data": "skillLong" },
+            { "data": "skillShort" },
             { "data": "level" }
         ]
   });
