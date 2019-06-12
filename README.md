@@ -1,5 +1,5 @@
 # guillaumecleme.github.io
-Guillaume Clement's Portfolio - https://guillaumecleme.github.io & https://guillaumecle.me
+Guillaume Clement's Portfolio - https://guillaumecle.me
 
 
 ## Download and Installation
