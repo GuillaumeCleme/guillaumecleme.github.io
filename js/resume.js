@@ -1,16 +1,29 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  //Define namespace if not exist
+  window.resume = window.resume || {};
+
+  //Set document title
+  window.resume.title = $(document).find("title").text();
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+      //Log page_view event
+      gtag('event', 'page_view', {
+        'page_title': window.resume.title,
+        'page_path' : "/" + this.hash
+      });
+
+      //Animate scroll
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top)
         }, 1000, "easeInOutExpo");
-        return false;
       }
     }
   });
