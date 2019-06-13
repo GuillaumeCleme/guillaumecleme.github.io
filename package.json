@@ -1,7 +1,7 @@
 {
     "title": "Guillaume Clement - Resume",
-    "name": "guillaumec91.github.io",
-    "version": "0.0.8",
+    "name": "guillaumecleme.github.io",
+    "version": "0.0.9",
     "scripts": {
         "start": "gulp watch"
     },
@@ -14,20 +14,20 @@
         "theme",
         "template"
     ],
-    "homepage": "https://guillaumec91.github.io",
+    "homepage": "https://guillaumecle.me",
     "bugs": {
-        "url": "https://github.com/GuillaumeC91/guillaumec91.github.io/issues",
-        "email": "clement.guillaume@live.ca"
+        "url": "https://github.com/guillaumecleme/guillaumecleme.github.io/issues",
+        "email": "guillaumecle.me@gmail.com"
     },
     "license": "MIT",
     "author": "Guillaume Clement",
     "contributors": [
-        "Guillaume Clement (https://guillaumec91.github.io)",
+        "Guillaume Clement (https://guillaumecle.me)",
         "David Miller (http://davidmiller.io/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/GuillaumeC91/guillaumec91.github.io.git"
+        "url": "https://github.com/guillaumecleme/guillaumecleme.github.io.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.8.1",
@@ -38,7 +38,7 @@
         "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.5",
+        "browser-sync": "^2.26.7",
         "del": "4.0.0",
         "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
