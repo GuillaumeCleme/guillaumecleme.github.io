@@ -10,6 +10,12 @@
   //Set document sections
   window.resume.sections = $("section");
 
+  //Define new timer to monitor user interaction
+  window.resume.skillTableTimer = null;
+  window.resume.skillTableQuery = null;
+  window.resume.skillTableEventSent = false;
+  window.resume.skillTableLastKeyDelete = false;
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -102,6 +108,53 @@
             { "data": "skillLong" },
             { "data": "skillShort" },
             { "data": "level" }
-        ]
+        ],
+        "initComplete": function() {
+          $('#skillsTable_filter').find("input").on("input", function(event){
+            //If the event has not been sent
+            if(!window.resume.skillTableEventSent){
+
+              //Set new query value
+              window.resume.skillTableQuery = event.target.value.toString();
+
+              //Clear previous timeout
+              if(window.resume.skillTableTimer != null){
+                clearTimeout(window.resume.skillTableTimer);
+              }
+
+              //Start new timer before sending event
+              window.resume.skillTableTimer = setTimeout(function(){
+                if(window.resume.skillTableQuery.length > 0){
+                  console.log("Sending:" + window.resume.skillTableQuery); //Send event
+                  window.resume.skillTableEventSent = true; //Set event sent
+                }
+              }, 2000); //Wait 2 seconds
+            }
+
+          }).keydown(function(event){
+            //Detect text deletion (Backspace/Delete)
+            if((event.which === 46 || event.which === 8)){
+              if(!window.resume.skillTableEventSent){
+                //Clear previous timeout
+                if(window.resume.skillTableTimer != null){
+                  clearTimeout(window.resume.skillTableTimer);
+                }
+
+                if (window.resume.skillTableQuery.length > 0) {
+                  console.log("Sending:" + window.resume.skillTableQuery);
+                }
+                
+                //Ensure the event does not fire again
+                window.resume.skillTableEventSent = true;
+              }
+              //Set last key to delete
+              window.resume.skillTableLastKeyDelete = true;
+            }
+            else{
+              window.resume.skillTableEventSent = false; //Event not sent
+              window.resume.skillTableLastKeyDelete = false; //Last key not delete
+            }
+          });
+        }
   });
 })(jQuery); // End of use strict
