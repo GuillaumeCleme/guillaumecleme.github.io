@@ -3,7 +3,8 @@
     "name": "guillaumecleme.github.io",
     "version": "0.0.9",
     "scripts": {
-        "start": "gulp watch"
+        "start": "gulp watch",
+        "gulp": "gulp"
     },
     "description": "Guillaume Clement's resume built using a simple, yet elegant resume and CV theme for Bootstrap 4.",
     "keywords": [
@@ -43,6 +44,7 @@
         "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "4.0.0",
+        "gulp-concat": "^2.6.1",
         "gulp-header": "2.0.7",
         "gulp-jsonminify": "^1.1.0",
         "gulp-plumber": "^1.2.1",
