@@ -12,7 +12,8 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
-var jsonminify = require('gulp-jsonminify');
+const jsonminify = require('gulp-jsonminify');
+const concat = require('gulp-concat');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -104,12 +105,10 @@ function js() {
       './js/*.js',
       '!./js/*.min.js'
     ])
+    .pipe(concat('resume.all.min.js'))
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
-    }))
-    .pipe(rename({
-      suffix: '.min'
     }))
     .pipe(gulp.dest('./js'))
     .pipe(browsersync.stream());
