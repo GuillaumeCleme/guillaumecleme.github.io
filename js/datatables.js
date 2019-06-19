@@ -30,7 +30,12 @@
         //Start new timer before sending event
         window.resume.datatables.skillTimer = setTimeout(function(){
           if(window.resume.datatables.skillQuery.length > 0){
-            console.log("Sending:" + window.resume.datatables.skillQuery); //Send event
+            //Send event
+            gtag('event', 'search', {
+              'event_category': 'engagement',
+              'event_label' : 'skills_search_term',
+              'value': window.resume.datatables.skillQuery
+            });
             window.resume.datatables.skillEventSent = true; //Set event sent
           }
         }, 2000); //Wait 2 seconds
@@ -46,7 +51,12 @@
           }
 
           if (window.resume.datatables.skillQuery.length > 0) {
-            console.log("Sending:" + window.resume.datatables.skillQuery);
+            //Send event
+            gtag('event', 'search', {
+              'event_category': 'engagement',
+              'event_label' : 'skills_search_term',
+              'value': window.resume.datatables.skillQuery
+            });
           }
 
           //Ensure the event does not fire again
@@ -65,8 +75,12 @@
     //Previous/Next button event listeners
     $('#skillsTable').on("page.dt", function () {
       var tableInfo = window.resume.datatables.skillsTable.page.info();
-      var currentPage = tableInfo.page + 1;
-      console.log('Showing page: ' + currentPage + ' of ' + tableInfo.pages );
+      //Send event
+      gtag('event', 'search', {
+        'event_category': 'engagement',
+        'event_label' : 'skills_page_navigation',
+        'value': tableInfo.page + 1
+      });
     });
   }
 
