@@ -6,6 +6,7 @@
   window.resume.datatables = window.resume.datatables || {};
 
   //Define new timer to monitor user interaction
+  window.resume.datatables.skillsTable = null;
   window.resume.datatables.skillTimer = null;
   window.resume.datatables.skillQuery = null;
   window.resume.datatables.skillEventSent = false;
@@ -13,6 +14,7 @@
 
   //Skill search monitoring funtion
   window.resume.datatables.init = function(){
+    //Search field event listener
     $('#skillsTable_filter').find("input").on("input", function(event){
       //If the event has not been sent
       if(!window.resume.datatables.skillEventSent){
@@ -58,10 +60,18 @@
         window.resume.datatables.skillLastKeyDelete = false; //Last key not delete
       }
     });
+
+
+    //Previous/Next button event listeners
+    $('#skillsTable').on("page.dt", function () {
+      var tableInfo = window.resume.datatables.skillsTable.page.info();
+      var currentPage = tableInfo.page + 1;
+      console.log('Showing page: ' + currentPage + ' of ' + tableInfo.pages );
+    });
   }
 
   //Bind Datatables
-  $('#skillsTable').DataTable({
+  window.resume.datatables.skillsTable = $('#skillsTable').DataTable({
         "ajax": "js/skills.min.json",
         "dom": '<"form-row bg-gray-100"' +
                '<"form-group col-md-6 mb-0 pl-0" <"input-group" <"input-group-prepend" <"input-group-text" <"fas fa-search">>> f>>' +
