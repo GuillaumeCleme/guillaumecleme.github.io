@@ -12,7 +12,8 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
-var jsonminify = require('gulp-jsonminify');
+const jsonminify = require('gulp-jsonminify');
+const concat = require('gulp-concat');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -20,8 +21,8 @@ const pkg = require('./package.json');
 // Set the banner content
 const banner = ['/*!\n',
   ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/GuillaumeC91/<%= pkg.name %>/blob/master/LICENSE)\n',
+  ' * Copyright 2018-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+  ' * Licensed under <%= pkg.license %> (https://github.com/GuillaumeCleme/<%= pkg.name %>/blob/master/LICENSE)\n',
   ' */\n',
   '\n'
 ].join('');
@@ -53,6 +54,7 @@ function modules() {
   // Bootstrap
   var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
     .pipe(gulp.dest('./vendor/bootstrap'));
+  //Datatables
   var datatables = gulp.src(['./node_modules/datatables.net*/**/*.js', './node_modules/datatables.net*/**/*.css'])
     .pipe(gulp.dest('./vendor/datatables'));
   // Font Awesome
@@ -103,12 +105,10 @@ function js() {
       './js/*.js',
       '!./js/*.min.js'
     ])
+    .pipe(concat('resume.all.min.js'))
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
-    }))
-    .pipe(rename({
-      suffix: '.min'
     }))
     .pipe(gulp.dest('./js'))
     .pipe(browsersync.stream());
