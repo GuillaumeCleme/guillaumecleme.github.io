@@ -48,6 +48,18 @@
     }
   );
 
+  //Track resume download
+  $('#resumeDownload').on("click", function () {
+    //Send event
+    gtag('event', 'view_item', {
+      'event_category': 'engagement',
+      'event_label' : 'resume_download',
+      'value': 1
+    });
+  });
+
+
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');

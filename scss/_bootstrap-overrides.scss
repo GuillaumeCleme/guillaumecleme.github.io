@@ -15,7 +15,30 @@
 }
 
 .text-secondary {
-  color: $secondary !important;
+  color: $gray-700 !important;
+}
+
+.btn-primary {
+    color: $primary;
+    background-color: $secondary;
+    border-color: $secondary;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $gray-600;
+      border-color: $gray-600;
+    }
+}
+
+.btn-secondary {
+    background-color: $gray-700;
+    border-color: $gray-700;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $gray-600;
+      border-color: $gray-600;
+    }
 }
 
 a {
