@@ -336,6 +336,11 @@
       "level": 85
     },
     {
+      "skillLong": "Kafka",
+      "skillShort": "Kafka",
+      "level": 30
+    },
+    {
       "skillLong": "Kerberos",
       "skillShort": "Kerberos",
       "level": 90
@@ -506,6 +511,11 @@
       "level": 95
     },
     {
+      "skillLong": "Ruby",
+      "skillShort": "Ruby",
+      "level": 45
+    },
+    {
       "skillLong": "SAML2.0",
       "skillShort": "SAML2.0",
       "level": 80
@@ -526,8 +536,8 @@
       "level": 90
     },
     {
-      "skillLong": "Selenuim",
-      "skillShort": "Selenuim",
+      "skillLong": "Selenium",
+      "skillShort": "Selenium",
       "level": 65
     },
     {
@@ -556,7 +566,7 @@
       "level": 55
     },
     {
-      "skillLong": "Swagger",
+      "skillLong": "Swagger (Open API)",
       "skillShort": "Swagger",
       "level": 65
     },
