@@ -51,25 +51,14 @@ function clean() {
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
-  // Bootstrap
-  var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
-    .pipe(gulp.dest('./vendor/bootstrap'));
-  //Datatables
-  var datatables = gulp.src(['./node_modules/datatables.net*/**/*.js', './node_modules/datatables.net*/**/*.css'])
-    .pipe(gulp.dest('./vendor/datatables'));
+  // Tailwind
+  var tailwind = gulp.src('./node_modules/tailwindcss/dist/**/*')
+    .pipe(gulp.dest('./vendor/tailwind'));
+
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./vendor'));
-  // jQuery Easing
-  var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
-    .pipe(gulp.dest('./vendor/jquery-easing'));
-  // jQuery
-  var jquery = gulp.src([
-      './node_modules/jquery/dist/*',
-      '!./node_modules/jquery/dist/core.js'
-    ])
-    .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, datatables, fontAwesome, jquery, jqueryEasing);
+  return merge(tailwind, fontAwesome);
 }
 
 // CSS task
