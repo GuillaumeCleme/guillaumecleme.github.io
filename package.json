@@ -31,17 +31,13 @@
         "url": "https://github.com/guillaumecleme/guillaumecleme.github.io.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.8.1",
-        "bootstrap": "4.3.1",
-        "datatables.net-bs4": "^1.10.19",
-        "datatables.net-responsive-bs4": "^2.2.3",
-        "jquery": "^3.4.1",
-        "jquery.easing": "^1.4.1"
+        "@fortawesome/fontawesome-free": "^5.14.0",
+        "gulp": "^4.0.2",
+        "tailwindcss": "^1.7.3"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.26.12",
         "del": "4.0.0",
-        "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "4.0.0",
         "gulp-concat": "^2.6.1",
