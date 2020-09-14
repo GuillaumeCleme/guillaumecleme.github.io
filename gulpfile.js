@@ -94,7 +94,7 @@ function js() {
       './js/*.js',
       '!./js/*.min.js'
     ])
-    .pipe(concat('resume.all.min.js'))
+    .pipe(concat('main.all.min.js'))
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
