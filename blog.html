@@ -69,7 +69,8 @@
 
 <body class="text-gray-800 antialiased">
   <main>
-    <nav class="fixed z-50 w-full bg-white top-0 flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg shadow-lg">
+    <nav
+      class="fixed z-50 w-full bg-white top-0 flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg shadow-lg">
       <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-gray-800"
@@ -85,15 +86,13 @@
         <div class="lg:flex flex-grow items-center hidden" id="top-navbar">
           <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
             <li class="nav-item text-gray-800 hover:text-gray-600">
-              <a href="#aboutme"
-                class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
+              <a href="#aboutme" class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
                 <i class="fas fa-address-card text-lg leading-lg"></i>
                 <span class="ml-2">About Me</span>
               </a>
             </li>
             <li class="nav-item text-gray-800 hover:text-gray-600">
-              <a href="#experience"
-                class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
+              <a href="#experience" class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
                 <i class="fas fa-briefcase text-lg leading-lg"></i>
                 <span class="ml-2">My Experience</span>
               </a>
@@ -118,7 +117,7 @@
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div class="pr-12">
               <h1 class="text-white font-semibold text-5xl">
-                Welcoment to my Blog.
+                Welcome to my Blog.
               </h1>
               <p class="mt-4 text-lg text-gray-300">
                 This is a simple example of a Landing Page you can build using
@@ -148,62 +147,132 @@
       <div class="container mx-auto px-4">
         <div class="items-center flex flex-wrap">
           <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-            <img alt="..." class="max-w-full rounded-lg shadow-lg"
+            <img alt="..." class="max-w-full rounded-lg shadow-lg" style="height: 25rem;"
               src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" />
           </div>
           <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
             <div class="md:pr-12">
-              <div
-                class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-                <i class="fas fa-rocket text-xl"></i>
-              </div>
               <h3 class="text-3xl font-semibold">A growing company</h3>
               <p class="mt-4 text-lg leading-relaxed text-gray-600">
                 The extension comes with three pre-built pages to help you get
                 started faster. You can change the text and images and you're
                 good to go.
               </p>
-              <ul class="list-none mt-6">
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i
-                          class="fas fa-fingerprint"></i></span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-600">
-                        Carefully crafted components
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i
-                          class="fab fa-html5"></i></span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-600">Amazing page examples</h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i
-                          class="far fa-paper-plane"></i></span>
-                    </div>
-                    <div>
-                      <h4 class="text-gray-600">Dynamic components</h4>
-                    </div>
-                  </div>
-                </li>
-              </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-40 relative bg-gray-200">
+      <div class="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute" style="height:80px;transform:translateZ(0)">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full -mt-40 mb-20">
+            <div class="container mx-auto px-6 relative">
+              <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+                <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+                  <div class="flex items-end justify-end h-56 w-full bg-cover"
+                    style="background-image: url('https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')">
+                    <button
+                      class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                      <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="px-5 py-3">
+                    <h3 class="text-gray-700 uppercase">braun watch</h3>
+                    <span class="text-gray-500 mt-2">$49</span>
+                  </div>
+                </div>
+                <!--
+                <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+                  <div class="flex items-end justify-end h-56 w-full bg-cover"
+                    style="background-image: url('https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')">
+                    <button
+                      class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                      <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="px-5 py-3">
+                    <h3 class="text-gray-700 uppercase">rolex watch</h3>
+                    <span class="text-gray-500 mt-2">$86</span>
+                  </div>
+                </div>
+                <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+                  <div class="flex items-end justify-end h-56 w-full bg-cover"
+                    style="background-image: url('https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')">
+                    <button
+                      class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                      <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="px-5 py-3">
+                    <h3 class="text-gray-700 uppercase">MVMtx watch</h3>
+                    <span class="text-gray-500 mt-2">$100</span>
+                  </div>
+                </div>
+                <div class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden">
+                  <div class="flex items-end justify-end h-56 w-full bg-cover"
+                    style="background-image: url('https://images.unsplash.com/photo-1444881421460-d838c3b98f95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80')">
+                    <button
+                      class="p-2 rounded-full bg-blue-600 text-white mx-5 -mb-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                      <svg class="h-5 w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="px-5 py-3">
+                    <h3 class="text-gray-700 uppercase">breitling watch</h3>
+                    <span class="text-gray-500 mt-2">$180</span>
+                  </div>
+                </div>
+                -->
+              </div>
+              <!--
+              <div class="flex justify-center">
+                <div class="flex rounded-md mt-8">
+                  <a href="#"
+                    class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 ml-0 rounded-l hover:bg-blue-500 hover:text-white"><span>Previous</a></a>
+                  <a href="#"
+                    class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 hover:bg-blue-500 hover:text-white"><span>1</span></a>
+                  <a href="#"
+                    class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 hover:bg-blue-500 hover:text-white"><span>2</span></a>
+                  <a href="#"
+                    class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 hover:bg-blue-500 hover:text-white"><span>3</span></a>
+                  <a href="#"
+                    class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 rounded-r hover:bg-blue-500 hover:text-white"><span>Next</span></a>
+                </div>
+              </div>
+              -->
+            </div>
+
+
+
+
+
+
           </div>
         </div>
       </div>
@@ -222,12 +291,13 @@
         <div class="w-full lg:w-6/12 px-4">
           <h4 class="text-3xl font-semibold text-white">Let's keep in touch!</h4>
           <h5 class="text-lg mt-0 mb-2 text-gray-500">
-            Make sure to connect with me on any of these platforms. 
+            Make sure to connect with me on any of these platforms.
           </h5>
           <div class="mt-6">
             <ul class="text-3xl list-none text-gray-500 pl-1">
               <li class="inline-block mr-2 hover:text-gray-700">
-                <a href="https://www.linkedin.com/in/guillaumecleme" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/guillaumecleme" target="_blank" rel="noreferrer"
+                  aria-label="LinkedIn">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -237,12 +307,14 @@
                 </a>
               </li>
               <li class="inline-block mr-2 hover:text-gray-700">
-                <a href="https://www.facebook.com/guillaume.e.clement" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <a href="https://www.facebook.com/guillaume.e.clement" target="_blank" rel="noreferrer"
+                  aria-label="Facebook">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li class="inline-block mr-2 hover:text-gray-700">
-                <a href="https://www.instagram.com/guillaumecle.me/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <a href="https://www.instagram.com/guillaumecle.me/" target="_blank" rel="noreferrer"
+                  aria-label="Instagram">
                   <i class="fab fa-instagram"></i>
                 </a>
               </li>
@@ -257,17 +329,20 @@
                 </a>
               </li>
               <li class="inline-block mr-2 hover:text-gray-700">
-                <a href="https://stackoverflow.com/users/3308078/guillaumecle.me" target="_blank" rel="noreferrer" aria-label="Stack Overflow">
+                <a href="https://stackoverflow.com/users/3308078/guillaumecle.me" target="_blank" rel="noreferrer"
+                  aria-label="Stack Overflow">
                   <i class="fab fa-stack-overflow"></i>
                 </a>
               </li>
               <li class="inline-block mr-2 hover:text-gray-700">
-                <a href="https://www.youracclaim.com/users/guillaumecleme" target="_blank" rel="noreferrer" aria-label="Adobe/Acclaim">
+                <a href="https://www.youracclaim.com/users/guillaumecleme" target="_blank" rel="noreferrer"
+                  aria-label="Adobe/Acclaim">
                   <i class="fab fa-adobe"></i>
                 </a>
               </li>
               <li class="inline-block hover:text-gray-700">
-                <a href="https://www.goodreads.com/guillaumecleme" target="_blank" rel="noreferrer" aria-label="Goodreads">
+                <a href="https://www.goodreads.com/guillaumecleme" target="_blank" rel="noreferrer"
+                  aria-label="Goodreads">
                   <i class="fab fa-goodreads"></i>
                 </a>
               </li>
