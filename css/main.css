@@ -7,3 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.featured-post-cover {
+  height: 32rem;
+}
