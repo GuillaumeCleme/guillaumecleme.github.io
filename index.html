@@ -69,46 +69,53 @@
 </head>
 
 <body class="text-gray-800 antialiased">
-  <main>
-    <nav class="fixed z-50 w-full bg-white top-0 flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg shadow-lg">
-      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-gray-800"
-            href="#">
-            Guillaume Clement
-          </a>
-          <button
-            class="toggleNav cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-            type="button">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-        <div class="lg:flex flex-grow items-center hidden" id="top-navbar">
-          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li class="nav-item text-gray-800 hover:text-gray-600">
-              <a href="#aboutme"
-                class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
-                <i class="fas fa-address-card text-lg leading-lg"></i>
-                <span class="ml-2">About Me</span>
-              </a>
-            </li>
-            <li class="nav-item text-gray-800 hover:text-gray-600">
-              <a href="#experience"
-                class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
-                <i class="fas fa-briefcase text-lg leading-lg"></i>
-                <span class="ml-2">My Experience</span>
-              </a>
-            </li>
-            <li class="nav-item text-gray-800 hover:text-gray-600">
-              <a class="toggleNav download-button px-3 py-2 flex items-center text-xs uppercase font-bold"
-                href="./img/Guillaume Clément Resume 6.0 - 2020.pdf" download>
-                <i class="fas fa-arrow-alt-circle-down text-lg leading-lg"></i>
-                <span class="ml-2">Download Resume</span></a>
-            </li>
-          </ul>
-        </div>
+  <nav class="fixed z-50 w-full bg-white top-0 flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg shadow-lg">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-gray-800"
+          href="#">
+          Guillaume Clement
+        </a>
+        <button
+          class="toggleNav cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-    </nav>
+      <div class="lg:flex flex-grow items-center hidden" id="top-navbar">
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <li class="nav-item text-gray-800 hover:text-gray-600">
+            <a href="#aboutme"
+              class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
+              <i class="fas fa-address-card text-lg leading-lg"></i>
+              <span class="ml-2">About Me</span>
+            </a>
+          </li>
+          <li class="nav-item text-gray-800 hover:text-gray-600">
+            <a href="#experience"
+              class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
+              <i class="fas fa-briefcase text-lg leading-lg"></i>
+              <span class="ml-2">My Experience</span>
+            </a>
+          </li>
+          <li class="nav-item text-gray-800 hover:text-gray-600">
+            <a href="./blog.html"
+              class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
+              <i class="fas fa-book text-lg leading-lg"></i>
+              <span class="ml-2">My Blog</span>
+            </a>
+          </li>
+          <li class="nav-item text-gray-800 hover:text-gray-600">
+            <a class="toggleNav download-button px-3 py-2 flex items-center text-xs uppercase font-bold"
+              href="./img/Guillaume Clément Resume 6.0 - 2020.pdf" download>
+              <i class="fas fa-arrow-alt-circle-down text-lg leading-lg"></i>
+              <span class="ml-2">Download Resume</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
     <section class="header relative pt-16 items-center flex h-screen" style="max-height:860px">
       <div class="container mx-auto items-center flex flex-wrap">
         <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
@@ -546,29 +553,6 @@
             </ul>
           </div>
         </div>
-        <!--
-        <div class="w-full lg:w-6/12 px-4">
-          <div class="flex flex-wrap items-top mb-6">
-            <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span class="block uppercase text-white text-sm font-semibold mb-2">Useful Links</span>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-gray-500 hover:text-gray-700 font-semibold block pb-2 text-sm" href="#">About Us</a>
-                </li>
-                <li>
-                  <a class="text-gray-500 hover:text-gray-700 font-semibold block pb-2 text-sm" href="#">Blog</a>
-                </li>
-                <li>
-                  <a class="text-gray-500 hover:text-gray-700 font-semibold block pb-2 text-sm" href="#">Github</a>
-                </li>
-                <li>
-                  <a class="text-gray-500 hover:text-gray-700 font-semibold block pb-2 text-sm" href="#">Free
-                    Products</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
       </div>
       <div class="flex flex-wrap items-center md:justify-between justify-center mt-16">
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
@@ -579,7 +563,6 @@
       </div>
     </div>
   </footer>
-
   <script src="./js/main.all.min.js" type="text/javascript"></script>
 </body>
 </html>
