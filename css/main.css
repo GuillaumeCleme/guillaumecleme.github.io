@@ -8,6 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.featured-post-cover {
-  height: 32rem;
+@media (min-width: 1024px) {
+  .featured-post-cover {
+    height: 32rem;
+  }
 }
