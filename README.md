@@ -1,14 +1,6 @@
 # guillaumecleme.github.io
 Guillaume Clement's Portfolio - https://guillaumecle.me
 
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release from Creative Tim](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/landing)
-* Clone the repo: `git clone https://github.com/creativetimofficial/tailwind-starter-kit.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/creativetimofficial/tailwind-starter-kit)
-
 ## Usage
 
 ### Basic Usage
