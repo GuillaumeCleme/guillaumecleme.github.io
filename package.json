@@ -1,51 +1,66 @@
 {
-    "title": "Guillaume Clement - Resume",
-    "name": "guillaumecleme.github.io",
-    "version": "1.0.0",
-    "scripts": {
-        "start": "gulp watch",
-        "gulp": "gulp"
+  "name": "guillaumecle.me",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
     },
-    "description": "Guillaume Clement's portfolio site built using a simple Tailwind CSS implementation.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
     ],
-    "homepage": "https://guillaumecle.me",
-    "bugs": {
-        "url": "https://github.com/guillaumecleme/guillaumecleme.github.io/issues",
-        "email": "guillaumecle.me@gmail.com"
+    "parserOptions": {
+      "parser": "babel-eslint"
     },
-    "license": "MIT",
-    "author": "Guillaume Clement",
-    "contributors": [
-        "Guillaume Clement (https://guillaumecle.me)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/guillaumecleme/guillaumecleme.github.io.git"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.14.0",
-        "gulp": "^4.0.2",
-        "tailwindcss": "^1.8.0"
-    },
-    "devDependencies": {
-        "browser-sync": "^2.26.12",
-        "del": "4.0.0",
-        "gulp-autoprefixer": "6.0.0",
-        "gulp-clean-css": "4.0.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-header": "2.0.7",
-        "gulp-jsonminify": "^1.1.0",
-        "gulp-plumber": "^1.2.1",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.2",
-        "merge-stream": "^1.0.1"
-    }
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest"
+  }
 }
