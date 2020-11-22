@@ -2,10 +2,29 @@ import Vue from 'vue'
 import App from './App.vue'
 import '@/assets/css/tailwind.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStackOverflow } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import {
+  faLinkedinIn,
+  faTwitter,
+  faFacebookF,
+  faInstagram,
+  faFacebookMessenger,
+  faGithub,
+  faStackOverflow,
+  faAdobe,
+  faGoodreads
+} from '@fortawesome/free-brands-svg-icons'
 
-library.add(faStackOverflow)
+library.add(faLinkedinIn,
+  faTwitter,
+  faFacebookF,
+  faInstagram,
+  faFacebookMessenger,
+  faGithub,
+  faStackOverflow,
+  faAdobe,
+  faGoodreads
+)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
