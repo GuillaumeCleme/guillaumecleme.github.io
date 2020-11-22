@@ -14,6 +14,14 @@ import {
   faAdobe,
   faGoodreads
 } from '@fortawesome/free-brands-svg-icons'
+import {
+  faBriefcase,
+  faCode,
+  faHandshake,
+  faRedo,
+  faRocket,
+  faUserTie
+} from '@fortawesome/free-solid-svg-icons'
 
 library.add(faLinkedinIn,
   faTwitter,
@@ -23,7 +31,13 @@ library.add(faLinkedinIn,
   faGithub,
   faStackOverflow,
   faAdobe,
-  faGoodreads
+  faGoodreads,
+  faBriefcase,
+  faUserTie,
+  faRocket,
+  faRedo,
+  faCode,
+  faHandshake
 )
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
