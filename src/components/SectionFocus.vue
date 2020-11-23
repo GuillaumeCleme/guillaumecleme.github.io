@@ -1,6 +1,6 @@
 <template>
   <section id="myfocus" class="mt-40 relative bg-gray-200">
-    <SlopeSeparator direction="asc"/>
+    <SlopeSeparator direction="asc" fillColor="text-gray-200"/>
     <div class="container mx-auto">
       <div class="flex flex-wrap items-center">
         <ProfileCard />

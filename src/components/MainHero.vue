@@ -9,11 +9,7 @@
             </p>
             <div class="mt-12">
               <ul class="text-5xl list-none text-gray-800">
-                <SocialIcon v-for="icon in socialIcons"
-                  v-bind:key="icon.key"
-                  v-bind:href="icon.href"
-                  v-bind:label="icon.label"
-                  v-bind:icon="icon.icon" />
+                <SocialIcons appearance="light"/>
               </ul>
             </div>
           </div>
@@ -26,27 +22,12 @@
 </template>
 
 <script>
-import SocialIcon from './SocialIcon.vue'
+import SocialIcons from './SocialIcons.vue'
 
 export default {
   name: 'MainHero',
   components: {
-    SocialIcon
-  },
-  data: function () {
-    return {
-      socialIcons: [
-        { href: 'https://www.linkedin.com/in/guillaumecleme', label: 'LinkedIn', icon: ['fab', 'linkedin-in'] },
-        { href: 'https://twitter.com/guillaumecleme', label: 'Twitter', icon: ['fab', 'twitter'] },
-        { href: 'https://www.facebook.com/guillaume.e.clement', label: 'FaceBook', icon: ['fab', 'facebook-f'] },
-        { href: 'https://www.instagram.com/guillaumecle.me/', label: 'Instagram', icon: ['fab', 'instagram'] },
-        { href: 'https://m.me/guillaume.e.clement', label: 'Messenger', icon: ['fab', 'facebook-messenger'] },
-        { href: 'https://github.com/guillaumecleme', label: 'GitHub', icon: ['fab', 'github'] },
-        { href: 'https://stackoverflow.com/users/3308078/guillaumecle.me', label: 'Stack Overflow', icon: ['fab', 'stack-overflow'] },
-        { href: 'https://www.youracclaim.com/users/guillaumecleme', label: 'Adobe/Acclaim', icon: ['fab', 'adobe'] },
-        { href: 'https://www.goodreads.com/guillaumecleme', label: 'Goodreads', icon: ['fab', 'goodreads'] }
-      ]
-    }
+    SocialIcons
   }
 }
 

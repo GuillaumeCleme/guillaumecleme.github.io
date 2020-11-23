@@ -1,6 +1,8 @@
 <template>
   <section id="experience" class="pb-10">
-    <SlopeSeparator direction="desc"/>
+    <div class="relative py-10">
+      <SlopeSeparator direction="desc" fillColor="text-white"/>
+    </div>
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap mb-24 justify-around">
         <div class="w-9/12 lg:w-4/12 my-4 md:my-auto">

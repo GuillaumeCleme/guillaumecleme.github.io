@@ -1,5 +1,5 @@
 <template>
-  <li class="inline-block mr-2 hover:text-gray-600">
+  <li class="inline-block mr-2" v-bind:class="appearance == 'light' ? 'hover:text-gray-600' : 'hover:text-gray-700'">
     <a :href="href" target="_blank" rel="noreferrer" :aria-label="label">
       <font-awesome-icon :icon="icon" />
     </a>
@@ -12,7 +12,8 @@ export default {
   props: {
     href: String,
     label: String,
-    icon: Array
+    icon: Array,
+    appearance: String
   }
 }
 </script>
