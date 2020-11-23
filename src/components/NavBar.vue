@@ -15,33 +15,11 @@
       </div>
       <div class="lg:flex flex-grow items-center" v-bind:class="open === true ? 'block' : 'hidden'">
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-          <li class="nav-item text-gray-800 hover:text-gray-600">
-            <a href="#aboutme"
-              class="px-3 py-2 flex items-center text-xs uppercase font-bold">
-              <div class="text-lg leading-lg">
-                <font-awesome-icon :icon="['fas', 'address-card']" />
-              </div>
-              <span class="ml-2">About Me</span>
-            </a>
-          </li>
-          <li class="nav-item text-gray-800 hover:text-gray-600">
-            <a href="#experience"
-              class="px-3 py-2 flex items-center text-xs uppercase font-bold">
-              <div class="text-lg leading-lg">
-                <font-awesome-icon :icon="['fas', 'briefcase']" />
-              </div>
-              <span class="ml-2">My Experience</span>
-            </a>
-          </li>
-          <li class="nav-item text-gray-800 hover:text-gray-600">
-            <a href="./blog.html"
-              class="px-3 py-2 flex items-center text-xs uppercase font-bold">
-              <div class="text-lg leading-lg">
-                <font-awesome-icon :icon="['fas', 'book']" />
-              </div>
-              <span class="ml-2">My Blog</span>
-            </a>
-          </li>
+          <NavLink v-for="link in navLinks"
+            v-bind:key="link.key"
+            v-bind:href="link.href"
+            v-bind:label="link.label"
+            v-bind:icon="link.icon"/>
         </ul>
       </div>
     </div>
@@ -49,11 +27,21 @@
 </template>
 
 <script>
+import NavLink from './NavLink.vue'
+
 export default {
   name: 'NavBar',
+  components: {
+    NavLink
+  },
   data: function () {
     return {
-      open: false
+      open: false,
+      navLinks: [
+        { href: '#aboutme', label: 'About Me', icon: ['fas', 'address-card'] },
+        { href: '#experience', label: 'My Experience', icon: ['fas', 'briefcase'] },
+        { href: './blog.html', label: 'My Blog', icon: ['fas', 'book'] }
+      ]
     }
   },
   methods: {
