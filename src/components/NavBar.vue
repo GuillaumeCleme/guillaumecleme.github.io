@@ -7,16 +7,17 @@
           Guillaume Clement
         </a>
         <button
-          class="toggleNav cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          v-on:click="toggleMobileNav"
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
           type="button">
           <font-awesome-icon :icon="['fas', 'bars']" />
         </button>
       </div>
-      <div class="lg:flex flex-grow items-center hidden" id="top-navbar">
+      <div class="lg:flex flex-grow items-center" v-bind:class="open === true ? 'block' : 'hidden'">
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="nav-item text-gray-800 hover:text-gray-600">
             <a href="#aboutme"
-              class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
+              class="px-3 py-2 flex items-center text-xs uppercase font-bold">
               <div class="text-lg leading-lg">
                 <font-awesome-icon :icon="['fas', 'address-card']" />
               </div>
@@ -25,7 +26,7 @@
           </li>
           <li class="nav-item text-gray-800 hover:text-gray-600">
             <a href="#experience"
-              class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
+              class="px-3 py-2 flex items-center text-xs uppercase font-bold">
               <div class="text-lg leading-lg">
                 <font-awesome-icon :icon="['fas', 'briefcase']" />
               </div>
@@ -34,7 +35,7 @@
           </li>
           <li class="nav-item text-gray-800 hover:text-gray-600">
             <a href="./blog.html"
-              class="toggleNav px-3 py-2 flex items-center text-xs uppercase font-bold">
+              class="px-3 py-2 flex items-center text-xs uppercase font-bold">
               <div class="text-lg leading-lg">
                 <font-awesome-icon :icon="['fas', 'book']" />
               </div>
@@ -46,6 +47,22 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  name: 'NavBar',
+  data: function () {
+    return {
+      open: false
+    }
+  },
+  methods: {
+    toggleMobileNav: function () {
+      this.open = this.open !== true
+    }
+  }
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
