@@ -16,6 +16,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faAddressCard,
+  faArrowAltCircleDown,
   faBars,
   faBook,
   faBriefcase,
@@ -43,7 +44,8 @@ library.add(faLinkedinIn,
   faHandshake,
   faAddressCard,
   faBook,
-  faBars
+  faBars,
+  faArrowAltCircleDown
 )
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)

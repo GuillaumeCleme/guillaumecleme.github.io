@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <NavBar />
-    <MainHero />
-    <SectionFocus />
-    <SectionAboutMe />
+    <main>
+      <MainHero />
+      <SectionFocus />
+      <SectionAboutMe />
+      <SectionExperience />
+    </main>
     <img alt="Vue logo" src="./assets/img/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -15,6 +18,7 @@ import NavBar from './components/NavBar.vue'
 import MainHero from './components/MainHero.vue'
 import SectionFocus from './components/SectionFocus.vue'
 import SectionAboutMe from './components/SectionAboutMe.vue'
+import SectionExperience from './components/SectionExperience.vue'
 
 export default {
   name: 'App',
@@ -23,7 +27,8 @@ export default {
     NavBar,
     MainHero,
     SectionFocus,
-    SectionAboutMe
+    SectionAboutMe,
+    SectionExperience
   }
 }
 </script>
