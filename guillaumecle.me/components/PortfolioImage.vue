@@ -1,8 +1,10 @@
 <template>
-  <img :src="require(`@/${src}`)"
+  <img
+    :src="require(`@/${src}`)"
     :alt="alt"
     :style="style"
-    class="w-full align-middle rounded-lg absolute shadow-lg" />
+    class="w-full align-middle rounded-lg absolute shadow-lg"
+  >
 </template>
 
 <!--

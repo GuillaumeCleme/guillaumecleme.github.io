@@ -1,11 +1,13 @@
 <template>
   <div name="socialicons">
-    <SocialIcon v-for="icon in socialIcons"
-      v-bind:key="icon.key"
-      v-bind:href="icon.href"
-      v-bind:label="icon.label"
-      v-bind:icon="icon.icon"
-      v-bind:appearance="appearance"/>
+    <SocialIcon
+      v-for="icon in socialIcons"
+      :key="icon.key"
+      :href="icon.href"
+      :label="icon.label"
+      :icon="icon.icon"
+      :appearance="appearance"
+    />
   </div>
 </template>
 
@@ -20,13 +22,13 @@ export default {
   props: {
     appearance: {
       type: String,
-      validator: function (value) {
+      validator (value) {
         // The value must match one of these strings
-        return ['light', 'dark'].indexOf(value) !== -1
+        return ['light', 'dark'].includes(value)
       }
     }
   },
-  data: function () {
+  data () {
     return {
       socialIcons: [
         { href: 'https://www.linkedin.com/in/guillaumecleme', label: 'LinkedIn', icon: ['fab', 'linkedin-in'] },

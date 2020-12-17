@@ -1,11 +1,13 @@
 <template>
   <li class="nav-item text-gray-800 hover:text-gray-600">
-    <a :href="href"
-      class="px-3 py-2 flex items-center text-xs uppercase font-bold">
+    <a
+      :href="href"
+      class="px-3 py-2 flex items-center text-xs uppercase font-bold"
+    >
       <div class="text-lg leading-lg">
         <font-awesome-icon :icon="icon" />
       </div>
-      <span class="ml-2">{{label}}</span>
+      <span class="ml-2">{{ label }}</span>
     </a>
   </li>
 </template>

@@ -1,7 +1,10 @@
 <template>
-  <a class="download-button items-center text-xs uppercase font-bold text-gray-800 hover:text-gray-600"
-    :href="href" download>
-    <font-awesome-icon :icon="['fas', 'arrow-alt-circle-down']" class="text-lg leading-lg"/>
+  <a
+    class="download-button items-center text-xs uppercase font-bold text-gray-800 hover:text-gray-600"
+    :href="href"
+    download
+  >
+    <font-awesome-icon :icon="['fas', 'arrow-alt-circle-down']" class="text-lg leading-lg" />
     <span class="ml-2">Download My Resume</span>
   </a>
 </template>

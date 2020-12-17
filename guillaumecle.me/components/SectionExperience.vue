@@ -1,27 +1,31 @@
 <template>
   <section id="experience" class="pb-10">
     <div class="relative py-10">
-      <SlopeSeparator direction="desc" fillColor="text-white"/>
+      <SlopeSeparator direction="desc" fill-color="text-white" />
     </div>
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap mb-24 justify-around">
         <div class="w-9/12 lg:w-4/12 my-4 md:my-auto">
-          <h3 class="text-3xl font-semibold mb-2">My Experience.</h3>
+          <h3 class="text-3xl font-semibold mb-2">
+            My Experience.
+          </h3>
           <p class="text-md leading-relaxed text-gray-700 my-4">
             Over the course of my career I have had the chance to work on and develop technical solutions both personally and by leading technical teams for several years. I currently lead a team of technical resources engaged in the delivery of enterprise solutions for public and private sector companies.
           </p>
-          <DownloadResumeButton href="/pdf/Guillaume Clément Resume 6.0 - 2020.pdf"/>
+          <DownloadResumeButton href="/pdf/Guillaume Clément Resume 6.0 - 2020.pdf" />
         </div>
         <div class="w-full lg:w-6/12 px-4">
           <div class="relative m-8">
-            <div class="border-r-2 border-blue-400 absolute h-full top-0" style="left: 15px"></div>
+            <div class="border-r-2 border-blue-400 absolute h-full top-0" style="left: 15px" />
             <ul class="list-none m-0 p-0">
-              <ExperienceTimelineItem v-for="(position, index) in experiences"
-                  v-bind:key="index"
-                  v-bind:index="index"
-                  v-bind:title="position.title"
-                  v-bind:timeline="position.timeline"
-                  v-bind:desc="position.desc"/>
+              <ExperienceTimelineItem
+                v-for="(position, index) in experiences"
+                :key="index"
+                :index="index"
+                :title="position.title"
+                :timeline="position.timeline"
+                :desc="position.desc"
+              />
             </ul>
           </div>
         </div>
@@ -42,7 +46,7 @@ export default {
     DownloadResumeButton,
     ExperienceTimelineItem
   },
-  data: function () {
+  data () {
     return {
       experiences: [
         { title: 'Director, Solution Delivery', timeline: 'Apr. 2017 - Now', desc: 'In this role I ensure the success and impact of client engagements from qualification to delivery and post-delivery while managing a cross-functional team distributed across North America.' },

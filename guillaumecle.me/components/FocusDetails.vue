@@ -4,15 +4,19 @@
       <div class="text-xl text-blue-700 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-400">
         <font-awesome-icon :icon="['fas', 'briefcase']" />
       </div>
-      <h3 class="text-3xl font-semibold">My Focus.</h3>
+      <h3 class="text-3xl font-semibold">
+        My Focus.
+      </h3>
       <p class="mt-4 text-md leading-relaxed text-gray-700">
         I spend most of my time applying my technical and management skills to larger teams to efficiently develop and deliver scalable solutions using iterative methodologies.
       </p>
       <ul class="list-none mt-6">
-        <SkillListItem v-for="skill in skills"
-                  v-bind:key="skill.key"
-                  v-bind:skill="skill.name"
-                  v-bind:icon="skill.icon" />
+        <SkillListItem
+          v-for="skill in skills"
+          :key="skill.key"
+          :skill="skill.name"
+          :icon="skill.icon"
+        />
       </ul>
     </div>
   </div>
@@ -26,7 +30,7 @@ export default {
   components: {
     SkillListItem
   },
-  data: function () {
+  data () {
     return {
       skills: [
         { name: 'Technical Leadership', icon: ['fas', 'user-tie'] },
