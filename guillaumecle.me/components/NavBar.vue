@@ -43,9 +43,9 @@ export default {
     return {
       open: false,
       navLinks: [
-        { href: '#aboutme', label: 'About Me', icon: ['fas', 'address-card'] },
-        { href: '#experience', label: 'My Experience', icon: ['fas', 'briefcase'] },
-        { href: './blog.html', label: 'My Blog', icon: ['fas', 'book'] }
+        { href: '/#aboutme', label: 'About Me', icon: ['fas', 'address-card'] },
+        { href: '/#experience', label: 'My Experience', icon: ['fas', 'briefcase'] },
+        { href: '/blog', label: 'My Blog', icon: ['fas', 'book'] }
       ]
     }
   },
