@@ -30,6 +30,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/fontawesome',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss'
   ],
@@ -58,6 +59,34 @@ export default {
           }
         })
       }
+    }
+  },
+
+  fontawesome: {
+    icons: {
+      brands: [
+        'faLinkedinIn',
+        'faTwitter',
+        'faFacebookF',
+        'faInstagram',
+        'faFacebookMessenger',
+        'faGithub',
+        'faStackOverflow',
+        'faAdobe',
+        'faGoodreads'
+      ],
+      solid: [
+        'faAddressCard',
+        'faArrowAltCircleDown',
+        'faBars',
+        'faBook',
+        'faBriefcase',
+        'faCode',
+        'faHandshake',
+        'faRedo',
+        'faRocket',
+        'faUserTie'
+      ]
     }
   }
 }
