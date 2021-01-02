@@ -1,12 +1,8 @@
 <template>
-  <section class="header relative pt-16 items-center flex h-screen" style="max-height:860px">
-    <div class="absolute top-0 w-full h-full">
-      <img
-        class="absolute top-0 w-full bg-center bg-cover"
-        src="~/assets/img/unsplash-NuFUbftUu_s-unsplash.jpg"
-        alt="Background Graphic - Laptop"
-        style="max-height:1000px"
-      >
+  <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+    <div
+      class="absolute top-0 w-full h-full bg-center bg-cover cover-image"
+    >
       <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black" />
     </div>
     <div class="container relative mx-auto">
@@ -23,18 +19,18 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: 'SecondaryHero'
 }
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-
+.cover-image{
+  background-image: url("../assets/img/unsplash-NuFUbftUu_s-unsplash.jpg");
+}
 </style>
