@@ -1,10 +1,8 @@
 <template>
   <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
-    <div
-      class="absolute top-0 w-full h-full bg-center bg-cover cover-image"
-    >
-      <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black" />
-    </div>
+    <CoverImage
+      cover="https://images.unsplash.com/photo-1559163499-413811fb2344?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    />
     <div class="container relative mx-auto">
       <div class="items-center flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
@@ -23,14 +21,17 @@
 </template>
 
 <script>
+import CoverImage from './CoverImage.vue'
+
 export default {
-  name: 'SecondaryHero'
+  name: 'SecondaryHero',
+  components: {
+    CoverImage
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.cover-image{
-  background-image: url("../assets/img/unsplash-NuFUbftUu_s-unsplash.jpg");
-}
+
 </style>

@@ -85,7 +85,8 @@ export default {
         'faHandshake',
         'faRedo',
         'faRocket',
-        'faUserTie'
+        'faUserTie',
+        'faMapMarkerAlt'
       ]
     }
   }
