@@ -60,7 +60,7 @@ export default {
         })
 
         config.module.rules.push({
-          test: /\.(pdf)$/,
+          test: /\.(pdf|txt|xml|ico|md)$/,
           loader: 'file-loader',
           options: {
             name: '[path][name].[ext]'
