@@ -13,17 +13,95 @@ I like to think of Agile as an open/closed principle. For developers, I will use
 
 Think of Agile as an interface such as the following:
 
-# TODO
+```java
+public interface Agile {
+    
+    public void collaborate(Team team);
+
+    public Work getWork(List<Requirement> requirements);
+    
+    public Release deliver(Work work);
+
+    public Progress getProgress(Work work);
+
+    public Adjustments retrospective(Reflection reflection);
+}
+```
 
 It includes a few implementable methods that must be implemented by whichever class you choose, but the rest remains malleable.
 
 Methodologies such as Scrum and Kanban implement Agile principles the same way a class would. Their implementations is also typically much more detailed:
 
-# TODO
+```java
+public class Scrum implements Agile {
+
+    public Sprint createSprint(Goal goal, Work work){
+        return new Sprint(goal, work);
+    }
+
+    @Override
+    public void collaborate(Team team) {
+        ScrumTeam scrumTeam = (ScrumTeam) team;
+
+        DailyScrum scrum = new DailyScrum(scrumTeam);
+        scrum.host();
+
+        Sprint sprint = createSprint(new Goal("To deliver value!"), 
+                            getWork(scrumTeam.getProductOwner().getRequirements()));
+        sprint.plan();
+        sprint.workOn();
+    }
+
+    @Override
+    public Work getWork(List<Requirement> requirements) {
+        requirements.sort(Priority.HIGH_PRIORITY_ORDER);
+        return new Work(requirements);
+    }
+
+    @Override
+    public Release deliver(Work work) {
+        return work.deliver();
+    }
+
+    @Override
+    public Progress getProgress(Work work) {
+        return work.getCompletedWork();
+    }
+
+    @Override
+    public Adjustments retrospective(Reflection reflection) {
+        Adjustments adjustments = new Adjustments();
+        adjustments.add(reflection.getWhatWorkedWell());
+        adjustments.add(reflection.getWhatDidntWorkWell());
+        adjustments.add(reflection.getFutureSprintCommitment());
+        return adjustments;
+    }
+}
+```
 
 If you and your team choose to implement one of these methodologies, you will start by using all of the "features" implemented by this class. Little by little though, after each retrospective event, you will have to adapt certain processes to your business and needs. This may leave you with an implementation like the following, and that is exactly what you want:
 
-# TODO
+```java
+public class YourScrum extends Scrum {
+
+    @Override
+    public void collaborate(Team team) {
+        ScrumTeam scrumTeam = (ScrumTeam) team;
+
+        DailyScrum scrum = new DailyScrum(scrumTeam);
+        scrum.host();
+
+        //Make it your own!
+        YourOwnProcess yourOwnProcess = new YourOwnProcess();
+        yourOwnProcess.implement();
+
+        Sprint sprint = super.createSprint(new Goal("To deliver value!"), 
+                                getWork(scrumTeam.getProductOwner().getRequirements()));
+        sprint.plan();
+        sprint.workOn();
+    }
+}
+```
 
 In short, Scrum is not Agile. Agile is a set of guiding principles that are meant to allow for continuous improvement. Make it your own and stick to it!
 
