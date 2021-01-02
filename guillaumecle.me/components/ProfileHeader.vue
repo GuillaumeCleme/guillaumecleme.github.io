@@ -22,7 +22,7 @@
           style="transition: all 0.15s ease 0s;"
           :href="shareUrl"
         >
-          <i class="fab fa-twitter" />
+          <font-awesome-icon :icon="['fab', 'twitter']" />
           Share
         </a>
       </div>

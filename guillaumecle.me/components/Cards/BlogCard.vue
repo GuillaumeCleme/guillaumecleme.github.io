@@ -7,7 +7,7 @@
         ''
     ]"
   >
-    <a href="./blog/2020-11-14-digitizing-paper-based-processes.html">
+    <NuxtLink :to="{ name: 'blog-slug', params: { blog: 'blog', slug: slug } }">
       <div
         class="flex items-end justify-end w-full bg-cover h-56"
         :class="[
@@ -18,12 +18,14 @@
         :style="'background-image: url(' + cover + ')'"
       />
       <div class="px-5 py-3">
-        <h3 class="text-gray-700 uppercase">{{ title }}</h3>
+        <h3 class="text-gray-700 uppercase">
+          {{ title }}
+        </h3>
         <div class="text-gray-500 mt-2">
           {{ description }}
         </div>
       </div>
-    </a>
+    </NuxtLink>
   </div>
 </template>
 
@@ -42,6 +44,10 @@ export default {
     },
     cover: {
       type: String
+    },
+    slug: {
+      type: String,
+      required: true
     },
     featured: {
       type: Boolean,
