@@ -58,6 +58,14 @@ export default {
             fix: true
           }
         })
+
+        config.module.rules.push({
+          test: /\.(pdf)$/,
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]'
+          }
+        })
       }
     }
   },
