@@ -7,10 +7,12 @@
           <div class="container mx-auto px-6 relative">
             <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
               <BlogCard
-                title="Digitizing Paper Based Processes"
-                description="Digitizing processes can be very difficult. Tools have for a long time helped us gain efficiencies and in many cases, those tools have shaped our procedures..."
-                image-url="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80"
-                :featured="true"
+                v-for="(blog, index) in blogs"
+                :key="blog.slug"
+                :title="blog.title"
+                :description="blog.description"
+                :cover="blog.cover"
+                :featured="index == 0"
               />
             </div>
           </div>
@@ -29,6 +31,12 @@ export default {
   components: {
     SlopeSeparator,
     BlogCard
+  },
+  props: {
+    blogs: {
+      type: Array,
+      required: true
+    }
   }
 }
 

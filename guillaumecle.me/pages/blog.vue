@@ -6,7 +6,7 @@
       <div class="relative py-20">
         <SlopeSeparator direction="desc" fill-color="text-white" />
       </div>
-      <BlogListing />
+      <BlogListing :blogs="blogs" />
     </main>
     <MainFooter />
   </div>
@@ -27,6 +27,20 @@ export default {
     SlopeSeparator,
     BlogListing,
     MainFooter
+  },
+  async asyncData ({ $content, params, error }) {
+    const blogs = await $content('blog', params.slug)
+      .only(['title', 'description', 'slug', 'cover'])
+      .sortBy('date', 'desc')
+      .fetch()
+      // eslint-disable-next-line
+      .catch((err) => {
+        error({ statusCode: 404, message: 'Page not found' })
+      })
+
+    return {
+      blogs
+    }
   }
 }
 </script>

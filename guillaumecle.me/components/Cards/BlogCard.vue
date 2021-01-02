@@ -15,7 +15,7 @@
             'featured-post-cover' :
             ''
         ]"
-        :style="'background-image: url(' + imageUrl + ')'"
+        :style="'background-image: url(' + cover + ')'"
       />
       <div class="px-5 py-3">
         <h3 class="text-gray-700 uppercase">{{ title }}</h3>
@@ -40,7 +40,7 @@ export default {
       type: String,
       default: 'Blog Description'
     },
-    imageUrl: {
+    cover: {
       type: String
     },
     featured: {
