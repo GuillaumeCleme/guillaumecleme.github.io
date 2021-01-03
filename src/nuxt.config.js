@@ -3,7 +3,8 @@ export default {
   target: 'static',
 
   generate: {
-    dir: '../docs'
+    dir: '../docs',
+    subFolders: false
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
