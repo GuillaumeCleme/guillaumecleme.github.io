@@ -66,7 +66,9 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/fontawesome',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // https://google-analytics.nuxtjs.org/setup
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -102,6 +104,10 @@ export default {
         })
       }
     }
+  },
+
+  googleAnalytics: {
+    id: 'UA-141950820-1'
   },
 
   fontawesome: {
