@@ -15,7 +15,7 @@
             <div class="px-6">
               <ProfileImage />
               <ProfileHeader
-                share-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillaumecle.me%2Fblog%2F2020-11-14-digitizing-paper-based-processes.html&via=GuillaumeCleme&text=I%20just%20read%20a%20post%20about%20digitizing%20paper-based%20processes%21%20"
+                :share-url="post.shareUrl"
               />
               <div class="mt-6 py-10 border-t border-gray-300">
                 <div class="flex flex-wrap justify-center">

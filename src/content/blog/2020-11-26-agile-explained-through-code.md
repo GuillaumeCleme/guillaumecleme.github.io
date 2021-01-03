@@ -1,6 +1,7 @@
 ---
 title: Agile Explained Through Code
 description: Agile methodologies can closely resemble open/closed principles used in the development realm...
+shareUrl: https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillaumecle.me%2Fblog%2F2020-11-26-agile-explained-through-code.html&via=GuillaumeCleme&text=I%20just%20read%20a%20post%20explaining%20agile%20using%20code&hashtags=agile%2Cscrum%2Ccode%2Cdev
 cover: https://images.unsplash.com/photo-1586892477838-2b96e85e0f96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1641&q=80
 ---
 
