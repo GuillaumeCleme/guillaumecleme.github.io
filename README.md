@@ -25,4 +25,5 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Credits
 
-Template: [Creative Tim - Landing Page](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/landing).
+* Template: [Creative Tim - Landing Page](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/landing).
+* Font: [Font Awesome](https://fontawesome.com/license )
