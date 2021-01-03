@@ -1,7 +1,7 @@
 {
   "title": "Guillaume Clement - Resume",
   "name": "guillaumecle.me",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Guillaume Clement's portfolio site built using a simple Nuxt.js and Tailwind CSS implementation.",
   "private": true,
   "scripts": {
