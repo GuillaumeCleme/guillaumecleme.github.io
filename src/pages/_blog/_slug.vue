@@ -53,6 +53,26 @@ export default {
     const post = await $content('blog', params.slug).fetch()
 
     return { post }
+  },
+  head () {
+    return {
+      title: 'Guillaume Clement | Blog | ' + this.post.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.description
+        },
+        { name: 'og:title', content: this.post.title },
+        { name: 'og:description', content: this.post.description },
+        { name: 'og:image', content: this.post.cover },
+        { name: 'og:image:secure_url', content: this.post.cover },
+        { name: 'og:image:alt', content: this.post.title },
+        { name: 'twitter:title', content: this.post.title },
+        { name: 'twitter:description', content: this.post.description },
+        { name: 'twitter:image', content: this.post.cover }
+      ]
+    }
   }
 }
 
