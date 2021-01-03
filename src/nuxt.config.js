@@ -8,6 +8,14 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
+    htmlAttrs: {
+      lang: 'en',
+      xmlns: 'http://www.w3.org/1999/xhtml',
+      'xmlns:fb': 'http://ogp.me/ns/fb#'
+    },
+    headAttrs: {
+      prefix: 'og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
