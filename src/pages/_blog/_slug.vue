@@ -114,6 +114,16 @@ export default {
   margin-bottom: 0.5rem;
 }
 
+.nuxt-content h3 {
+  /* text-xl */
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  /* leading-normal */
+  line-height: 1.5;
+  /* mb-2 */
+  margin-bottom: 0.5rem;
+}
+
 .nuxt-content p {
   /* text-lg */
   font-size: 1.125rem;
@@ -122,5 +132,27 @@ export default {
   line-height: 1.625;
   /* mb-4 */
   margin-bottom: 1rem;
+}
+
+.nuxt-content a {
+  /* font-bold */
+  font-weight: 700;
+}
+.nuxt-content a:hover {
+  /* text-gray-400 */
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.nuxt-content blockquote  {
+  --tw-text-opacity: 1;
+  border-left: 10px solid rgba(229, 231, 235, var(--tw-text-opacity));
+  margin: 1.5em;
+  padding: 0.5em;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.nuxt-content blockquote p  {
+  margin-bottom: 0;
 }
 </style>
