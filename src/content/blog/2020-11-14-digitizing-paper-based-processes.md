@@ -3,6 +3,7 @@ title: Digitizing Paper Based Processes
 description: Digitizing processes can be very difficult. Tools have for a long time helped us gain efficiencies and in many cases, those tools have shaped our procedures...
 shareUrl: https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillaumecle.me%2Fblog%2F2020-11-14-digitizing-paper-based-processes.html&via=GuillaumeCleme&text=I%20just%20read%20a%20post%20about%20digitizing%20paper-based%20processes%21%20
 cover: https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80
+createdAt: 2020/11/14
 ---
 
 # Digitizing Paper Based Processes
