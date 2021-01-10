@@ -24,13 +24,26 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    # https://github.com/marketplace/actions/deploy-to-github-pages
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+          persist-credentials: false
+    - name: Build with Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd src/
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
-    - run: npm run generate
+      env:
+        # https://docs.npmjs.com/cli/v6/using-npm/config#environment-variables
+        npm_config_prefix: /src
+      run: npm ci
+      run: npm run build --if-present
+      run: npm test
+      run: npm run generate
+    - name: Deploy to Github Pages
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: master # The branch the action should deploy to.
+          FOLDER: docs # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
