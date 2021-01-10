@@ -3,7 +3,7 @@ export default {
   target: 'static',
 
   generate: {
-    dir: '../docs',
+    dir: 'dist',
     subFolders: false
   },
 
