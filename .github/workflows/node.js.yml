@@ -36,10 +36,10 @@ jobs:
       env:
         # https://docs.npmjs.com/cli/v6/using-npm/config#environment-variables
         npm_config_prefix: /src
-      run: npm ci
-      run: npm run build --if-present
-      run: npm test
-      run: npm run generate
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
+    - run: npm run generate
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
