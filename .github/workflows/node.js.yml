@@ -24,7 +24,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     env:
         # https://docs.npmjs.com/cli/v6/using-npm/config#environment-variables
-        npm_config_prefix: ./src
+        npm_config_prefix: src/
 
     steps:
     # https://github.com/marketplace/actions/deploy-to-github-pages
