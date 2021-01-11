@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import SlopeSeparator from './SlopeSeparator.vue'
-import BlogCard from './Cards/BlogCard.vue'
+import SlopeSeparator from '@/components/Sections/Fragments/SlopeSeparator.vue'
+import BlogCard from '@/components/Cards/BlogCard.vue'
 
 export default {
   name: 'BlogListing',

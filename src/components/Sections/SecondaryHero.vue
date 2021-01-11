@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import CoverImage from './CoverImage.vue'
+import CoverImage from '@/components/Images/CoverImage.vue'
 
 export default {
   name: 'SecondaryHero',

@@ -5,7 +5,7 @@
     >
       <img
         alt="Guillaume's Profile"
-        src="../assets/img/profile.jpg"
+        src="../../assets/img/profile.jpg"
         class="w-full align-middle rounded-t-lg"
       >
       <blockquote class="relative p-8 mb-4">
