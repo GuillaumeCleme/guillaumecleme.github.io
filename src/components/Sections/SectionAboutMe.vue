@@ -22,7 +22,7 @@
               :key="image.key"
               :src="image.src"
               :alt="image.alt"
-              :style="image.style"
+              :styling="image.style"
             />
           </div>
         </div>
@@ -42,10 +42,10 @@ export default {
   data () {
     return {
       portfolioImages: [
-        { src: 'assets/img/portfolio/pexels-lukas-574071.jpg', alt: 'Computer Development', style: 'max-width:210px;left:260px;top:-160px' },
-        { src: 'assets/img/portfolio/pexels-jose-vega-3801030.jpg', alt: 'Foggy Forest', style: 'max-width:180px;left:70px;top:-225px;z-index:2' },
-        { src: 'assets/img/portfolio/pexels-nathan-cowley-1151282.jpg', alt: 'Sunny Beach', style: 'max-width:180px;left:260px;top:-10px;z-index:2' },
-        { src: 'assets/img/portfolio/pexels-di-bella-coffee-1233528.jpg', alt: 'Cup of Espresso', style: 'max-width:200px;left:50px;top:55px' }
+        { src: 'assets/img/portfolio/pexels-lukas-574071.jpg', alt: 'Computer Development', style: 'compdev' },
+        { src: 'assets/img/portfolio/pexels-jose-vega-3801030.jpg', alt: 'Foggy Forest', style: 'forest' },
+        { src: 'assets/img/portfolio/pexels-nathan-cowley-1151282.jpg', alt: 'Sunny Beach', style: 'beach' },
+        { src: 'assets/img/portfolio/pexels-di-bella-coffee-1233528.jpg', alt: 'Cup of Espresso', style: 'coffee' }
       ]
     }
   }
