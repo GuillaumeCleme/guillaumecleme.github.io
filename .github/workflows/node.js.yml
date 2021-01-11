@@ -45,3 +45,5 @@ jobs:
         FOLDER: src/dist # The folder the action should deploy.
         TARGET_FOLDER: docs # The folder where the content should be deployed
         CLEAN: true # Automatically remove deleted files from the deploy branch
+        GIT_CONFIG_NAME: Github Pages
+        GIT_CONFIG_EMAIL: noreply@github.com
