@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import NavBar from '@/components/NavBar.vue'
+import NavBar from '@/components/Nav/NavBar.vue'
 
 describe('NavBar', () => {
   test('is a Vue instance', () => {

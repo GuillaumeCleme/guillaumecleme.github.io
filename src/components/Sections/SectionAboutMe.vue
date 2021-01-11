@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import PortfolioImage from '@/components/PortfolioImage.vue'
+import PortfolioImage from '@/components/Images/PortfolioImage.vue'
 
 export default {
   name: 'SectionAboutMe',

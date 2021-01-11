@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SocialIcon from '@/components/SocialIcon.vue'
+import SocialIcon from '@/components/Sections/Fragments/SocialIcon.vue'
 
 export default {
   name: 'SocialIcons',

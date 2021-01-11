@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import SlopeSeparator from '@/components/SlopeSeparator.vue'
-import ProfileCard from '@/components/ProfileCard.vue'
-import FocusDetails from '@/components/FocusDetails.vue'
+import SlopeSeparator from '@/components/Sections/Fragments/SlopeSeparator.vue'
+import ProfileCard from '@/components/Cards/ProfileCard.vue'
+import FocusDetails from '@/components/Sections/Fragments/FocusDetails.vue'
 
 export default {
   name: 'SectionFocus',

@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import DownloadResumeButton from '@/components/DownloadResumeButton.vue'
-import SlopeSeparator from '@/components/SlopeSeparator.vue'
-import ExperienceTimelineItem from '@/components/ExperienceTimelineItem.vue'
+import DownloadResumeButton from '@/components/Actions/DownloadResumeButton.vue'
+import SlopeSeparator from '@/components/Sections/Fragments/SlopeSeparator.vue'
+import ExperienceTimelineItem from '@/components/Sections/Fragments/ExperienceTimelineItem.vue'
 
 export default {
   name: 'SectionExperience',
