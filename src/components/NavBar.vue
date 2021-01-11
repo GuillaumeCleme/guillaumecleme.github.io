@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import NavLink from './NavLink.vue'
+import NavLink from '@/components/NavLink.vue'
 
 export default {
   name: 'NavBar',

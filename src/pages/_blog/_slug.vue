@@ -49,10 +49,10 @@
 </template>
 
 <script>
-import NavBar from '../../components/NavBar.vue'
-import MainFooter from '../../components/MainFooter.vue'
-import ProfileHeader from '../../components/ProfileHeader.vue'
-import ProfileImage from '../../components/ProfileImage.vue'
+import NavBar from '@/components/NavBar.vue'
+import MainFooter from '@/components/MainFooter.vue'
+import ProfileHeader from '@/components/ProfileHeader.vue'
+import ProfileImage from '@/components/ProfileImage.vue'
 
 export default {
   name: 'BlogPost',

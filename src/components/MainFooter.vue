@@ -29,8 +29,8 @@
 </template>
 
 <script>
-import SocialIcons from './SocialIcons.vue'
-import SlopeSeparator from './SlopeSeparator.vue'
+import SocialIcons from '@/components/SocialIcons.vue'
+import SlopeSeparator from '@/components/SlopeSeparator.vue'
 
 export default {
   name: 'MainFooter',

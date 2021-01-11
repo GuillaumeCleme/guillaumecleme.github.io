@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import SkillListItem from './SkillListItem.vue'
+import SkillListItem from '@/components/SkillListItem.vue'
 
 export default {
   name: 'FocusDetails',

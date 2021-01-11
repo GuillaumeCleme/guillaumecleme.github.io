@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
-import MainHero from '../components/MainHero.vue'
-import SectionFocus from '../components/SectionFocus.vue'
-import SectionAboutMe from '../components/SectionAboutMe.vue'
-import SectionExperience from '../components/SectionExperience.vue'
-import MainFooter from '../components/MainFooter.vue'
+import NavBar from '@/components/NavBar.vue'
+import MainHero from '@/components/MainHero.vue'
+import SectionFocus from '@/components/SectionFocus.vue'
+import SectionAboutMe from '@/components/SectionAboutMe.vue'
+import SectionExperience from '@/components/SectionExperience.vue'
+import MainFooter from '@/components/MainFooter.vue'
 
 export default {
   name: 'Index',

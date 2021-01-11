@@ -13,11 +13,11 @@
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
-import SecondaryHero from '../components/SecondaryHero.vue'
-import BlogListing from '../components/BlogListing.vue'
-import MainFooter from '../components/MainFooter.vue'
-import SlopeSeparator from '../components/SlopeSeparator.vue'
+import NavBar from '@/components/NavBar.vue'
+import SecondaryHero from '@/components/SecondaryHero.vue'
+import BlogListing from '@/components/BlogListing.vue'
+import MainFooter from '@/components/MainFooter.vue'
+import SlopeSeparator from '@/components/SlopeSeparator.vue'
 
 export default {
   name: 'Blog',

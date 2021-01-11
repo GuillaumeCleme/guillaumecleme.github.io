@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import SocialIcons from './SocialIcons.vue'
+import SocialIcons from '@/components/SocialIcons.vue'
 
 export default {
   name: 'MainHero',
