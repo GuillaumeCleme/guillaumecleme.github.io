@@ -23,7 +23,7 @@ export default {
 .img-top-right {
   max-width:210px;
   left:260px;
-  top:-160px;
+  top:-180px;
   z-index:2;
 }
 .img-top-left {

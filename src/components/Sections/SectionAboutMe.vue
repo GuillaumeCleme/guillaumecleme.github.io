@@ -42,10 +42,10 @@ export default {
   data () {
     return {
       portfolioImages: [
-        { src: 'assets/img/portfolio/pexels-lukas-574071.jpg', alt: 'Computer Development', style: 'img-top-right' },
-        { src: 'assets/img/portfolio/pexels-jose-vega-3801030.jpg', alt: 'Foggy Forest', style: 'img-top-left' },
-        { src: 'assets/img/portfolio/pexels-nathan-cowley-1151282.jpg', alt: 'Sunny Beach', style: 'img-bottom-right' },
-        { src: 'assets/img/portfolio/pexels-di-bella-coffee-1233528.jpg', alt: 'Cup of Espresso', style: 'img-bottom-left' }
+        { src: 'assets/img/portfolio/las-vegas-summit.jpg', alt: 'Las Vegas Summit Team Image', style: 'img-top-right' },
+        { src: 'assets/img/portfolio/gillette-stadium-healthcare-exchange.png', alt: 'Gillete Stadium Guest Speaker', style: 'img-top-left' },
+        { src: 'assets/img/portfolio/algonquin-college-mentor.jpg', alt: 'Algonquin College Student Mentor', style: 'img-bottom-right' },
+        { src: 'assets/img/portfolio/adobe-ottawa.jpeg', alt: 'Adobe Meetup Guest Speaker', style: 'img-bottom-left' }
       ]
     }
   }
