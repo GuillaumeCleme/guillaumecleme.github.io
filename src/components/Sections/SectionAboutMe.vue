@@ -15,8 +15,8 @@
             I enjoy spending time in nature, hiking, camping, climbing mountains, driving around in my Jeep, and staying active. When relaxing, I can also be found reading business, finance, and technology books while enjoying the darkest coffee available.
           </p>
         </div>
-        <div class="w-full md:w-5/12 pl-10 sm:ml-6 sm:px-4 mr-auto ml-auto mt-20 sm:mt-32 md:mt-48 sm:pb-6">
-          <div class="relative flex flex-col min-w-0 w-full mb-48 md:mb-6 mt-48 md:mt-0 ml-0 md:-ml-32 lg:ml-0">
+        <div class="w-full md:w-5/12 md:pl-10 sm:ml-6 sm:px-4 mr-auto ml-auto mt-20 sm:mt-32 md:mt-48 sm:pb-6">
+          <div class="relative flex flex-col min-w-0 w-full mb-56 md:mb-32 mt-48 md:mt-0 -ml-4 md:-ml-40 lg:-ml-16 xl:ml-0">
             <PortfolioImage
               v-for="image in portfolioImages"
               :key="image.key"
@@ -42,10 +42,10 @@ export default {
   data () {
     return {
       portfolioImages: [
-        { src: 'assets/img/portfolio/pexels-lukas-574071.jpg', alt: 'Computer Development', style: 'compdev' },
-        { src: 'assets/img/portfolio/pexels-jose-vega-3801030.jpg', alt: 'Foggy Forest', style: 'forest' },
-        { src: 'assets/img/portfolio/pexels-nathan-cowley-1151282.jpg', alt: 'Sunny Beach', style: 'beach' },
-        { src: 'assets/img/portfolio/pexels-di-bella-coffee-1233528.jpg', alt: 'Cup of Espresso', style: 'coffee' }
+        { src: 'assets/img/portfolio/pexels-lukas-574071.jpg', alt: 'Computer Development', style: 'img-top-right' },
+        { src: 'assets/img/portfolio/pexels-jose-vega-3801030.jpg', alt: 'Foggy Forest', style: 'img-top-left' },
+        { src: 'assets/img/portfolio/pexels-nathan-cowley-1151282.jpg', alt: 'Sunny Beach', style: 'img-bottom-right' },
+        { src: 'assets/img/portfolio/pexels-di-bella-coffee-1233528.jpg', alt: 'Cup of Espresso', style: 'img-bottom-left' }
       ]
     }
   }
