@@ -137,5 +137,14 @@ export default {
         'faMapMarkerAlt'
       ]
     }
+  },
+
+  // Defaults options
+  tailwindcss: {
+    cssPath: 'node_modules/tailwindcss/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    config: {}
   }
+
 }
