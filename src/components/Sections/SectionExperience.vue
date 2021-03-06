@@ -49,7 +49,8 @@ export default {
   data () {
     return {
       experiences: [
-        { title: 'Director, Solution Delivery', timeline: 'Apr. 2017 - Now', desc: 'In this role I ensure the success and impact of client engagements from qualification to delivery and post-delivery while managing a cross-functional team distributed across North America.' },
+        { title: 'Principal Technical Program Manager', timeline: 'Jan. 2021 - Now', desc: 'I am responsible for the implementation and enforcement of best practices, review, and testing of code, gathering and creating product requirements and specifications, and driving new products and features through the development process.' },
+        { title: 'Director, Solution Delivery', timeline: 'Apr. 2017 - Jan. 2021', desc: 'In this role I ensured the success and impact of client engagements from qualification to delivery and post-delivery while managing a cross-functional team distributed across North America.' },
         { title: 'Senior Systems Analyst', timeline: 'Feb. 2015 – Apr. 2017', desc: 'As part of this technical role I excelled at navigating both business and technical challenges while quickly providing value to team members and customers alike.' },
         { title: 'Systems Analyst', timeline: 'Nov. 2014 – Feb. 2015', desc: 'My duties involved managing and delivering professional services engagements through the delivery of enterprise solutions and industry best-practices.' },
         { title: 'Technical Support Consultant', timeline: 'Aug. 2012 – Oct. 2014', desc: 'This role provided me with the ultimate foundation required to expand my technical skills and gain a deep understanding and familiarity with full-stack development and applications.' }
