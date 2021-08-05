@@ -12,7 +12,7 @@
           <p class="text-md leading-relaxed text-gray-700 my-4">
             Over the course of my career I have had the chance to work on and develop technical solutions both personally and by leading technical teams for several years. I currently lead a team of technical resources engaged in the delivery of enterprise solutions for public and private sector companies.
           </p>
-          <DownloadResumeButton href="/pdf/Guillaume Clément Resume 6.0 - 2020.pdf" />
+          <DownloadResumeButton href="/pdf/Guillaume Clement - Resume 6.0 - 2021.pdf" />
         </div>
         <div class="w-full lg:w-6/12 px-4">
           <div class="relative m-8">
