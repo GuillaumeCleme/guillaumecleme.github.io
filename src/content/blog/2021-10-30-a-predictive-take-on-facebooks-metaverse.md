@@ -1,7 +1,7 @@
 ---
 title:  A predictive take on Facebook's Metaverse and Web 3.0
 description: My thoughts on the Meta rebrand and what it could mean for the future.
-shareUrl: https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillaumecle.me%2Fblog%2F2021-10-30-a-futurists-thoughts-on-the-meta-rebrand.html&via=GuillaumeCleme&text=Some%20interesting%20insights%20into%20the%20Facebook%20%28Meta%29%20rebrand&hashtags=metaverse%2Cmeta%2Cfacebook%2Cfacebookmeta%2Cweb3
+shareUrl: https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillaumecle.me%2Fblog%2F2021-10-30-a-predictive-take-on-facebooks-metaverse.html&via=GuillaumeCleme&text=Some%20interesting%20insights%20into%20the%20Facebook%20%28Meta%29%20rebrand&hashtags=metaverse%2Cmeta%2Cfacebook%2Cfacebookmeta%2Cweb3
 cover: https://images.unsplash.com/photo-1635002962487-2c1d4d2f63c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80
 createdAt: 2021/10/30
 ---
