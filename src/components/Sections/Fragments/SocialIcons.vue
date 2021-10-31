@@ -38,7 +38,7 @@ export default {
         { href: 'https://m.me/guillaume.e.clement', label: 'Messenger', icon: ['fab', 'facebook-messenger'] },
         { href: 'https://github.com/guillaumecleme', label: 'GitHub', icon: ['fab', 'github'] },
         { href: 'https://stackoverflow.com/users/3308078/guillaumecle.me', label: 'Stack Overflow', icon: ['fab', 'stack-overflow'] },
-        { href: 'https://www.youracclaim.com/users/guillaumecleme', label: 'Adobe/Acclaim', icon: ['fab', 'adobe'] },
+        { href: 'https://www.credly.com/users/guillaumecleme/badges', label: 'Credly', icon: ['fas', 'certificate'] },
         { href: 'https://www.goodreads.com/guillaumecleme', label: 'Goodreads', icon: ['fab', 'goodreads'] }
       ]
     }

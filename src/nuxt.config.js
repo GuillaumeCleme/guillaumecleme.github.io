@@ -120,7 +120,6 @@ export default {
         'faFacebookMessenger',
         'faGithub',
         'faStackOverflow',
-        'faAdobe',
         'faGoodreads'
       ],
       solid: [
@@ -134,7 +133,8 @@ export default {
         'faRedo',
         'faRocket',
         'faUserTie',
-        'faMapMarkerAlt'
+        'faMapMarkerAlt',
+        'faCertificate'
       ]
     }
   },
