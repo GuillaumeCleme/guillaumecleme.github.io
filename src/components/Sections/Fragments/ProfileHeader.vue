@@ -6,10 +6,10 @@
           Guillaume Clement
         </h3>
         <div class="mt-0 mb-2 text-gray-700">
-          <font-awesome-icon :icon="['fas', 'briefcase']" class="mr-2 text-lg text-gray-700" />Dir., Solution Delivery
+          <font-awesome-icon :icon="['fas', 'briefcase']" class="mr-2 text-lg text-gray-700" />Principal Technical Program Manager
         </div>
         <div class="text-sm leading-normal mt-3 mb-2 text-gray-700 font-medium uppercase">
-          <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="mr-2 text-lg text-gray-700" />Ottawa, Ontario
+          <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="mr-2 text-lg text-gray-700" />Canmore, Alberta
         </div>
       </div>
     </div>

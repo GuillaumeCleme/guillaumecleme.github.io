@@ -50,6 +50,7 @@
 
 <script>
 import NavBar from '@/components/Nav/NavBar.vue'
+import CoverImage from '@/components/Images/CoverImage.vue'
 import MainFooter from '@/components/Sections/MainFooter.vue'
 import ProfileHeader from '@/components/Sections/Fragments/ProfileHeader.vue'
 import ProfileImage from '@/components/Images/ProfileImage.vue'
@@ -58,6 +59,7 @@ export default {
   name: 'BlogPost',
   components: {
     NavBar,
+    CoverImage,
     MainFooter,
     ProfileHeader,
     ProfileImage
@@ -134,9 +136,16 @@ export default {
   margin-bottom: 1rem;
 }
 
+.nuxt-content ul {
+  list-style: disc;
+  margin: 1.5em;
+  padding: 0.5em;
+}
+
 .nuxt-content a {
   /* font-bold */
   font-weight: 700;
+  text-decoration: underline;
 }
 .nuxt-content a:hover {
   /* text-gray-400 */
