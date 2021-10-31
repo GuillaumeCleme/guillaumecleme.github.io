@@ -3,6 +3,7 @@ title: How I learned Vue.js in 1 day
 description: In this article I explain how I learned Vue.js in a single day and how you can too! 
 shareUrl: https://twitter.com/intent/tweet?url=https%3A%2F%2Fguillaumecle.me%2Fblog%2F2021-01-09-how-i-learned-vuejs-in-1-day&via=GuillaumeCleme&text=I%20just%20learned%20Vue.js%20in%20a%20single%20day%2C%20and%20you%20can%20too%21&hashtags=vuejs%2Cwebdev%2Cdev
 cover: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1952&q=80
+createdAt: 2021/01/09
 ---
 
 # How I learned Vue.js in 1 day
