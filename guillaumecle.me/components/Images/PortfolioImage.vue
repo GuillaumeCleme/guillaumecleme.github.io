@@ -1,6 +1,6 @@
 <template>
   <img
-    :src="require(`@/${src}`)"
+    :src="src"
     :alt="alt"
     class="w-full align-middle rounded-lg absolute shadow-lg"
     :class="styling"

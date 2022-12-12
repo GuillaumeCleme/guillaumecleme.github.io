@@ -42,10 +42,10 @@ export default {
   data () {
     return {
       portfolioImages: [
-        { src: 'assets/img/portfolio/las-vegas-summit.jpg', alt: 'Las Vegas Summit Team Image', style: 'img-top-right' },
-        { src: 'assets/img/portfolio/gillette-stadium-healthcare-exchange.png', alt: 'Gillete Stadium Guest Speaker', style: 'img-top-left' },
-        { src: 'assets/img/portfolio/algonquin-college-mentor.jpg', alt: 'Algonquin College Student Mentor', style: 'img-bottom-right' },
-        { src: 'assets/img/portfolio/adobe-ottawa.jpeg', alt: 'Adobe Meetup Guest Speaker', style: 'img-bottom-left' }
+        { src: '/img/portfolio/las-vegas-summit.jpg', alt: 'Las Vegas Summit Team Image', style: 'img-top-right' },
+        { src: '/img/portfolio/gillette-stadium-healthcare-exchange.png', alt: 'Gillete Stadium Guest Speaker', style: 'img-top-left' },
+        { src: '/img/portfolio/algonquin-college-mentor.jpg', alt: 'Algonquin College Student Mentor', style: 'img-bottom-right' },
+        { src: '/img/portfolio/adobe-ottawa.jpeg', alt: 'Adobe Meetup Guest Speaker', style: 'img-bottom-left' }
       ]
     }
   }
