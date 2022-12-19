@@ -6,13 +6,13 @@
       <div class="relative py-20">
         <SlopeSeparator direction="desc" fill-color="text-white" />
       </div>
-      <BlogListing :blogs="blogs" />
+      <BlogListing :blogs="data" />
     </main>
     <MainFooter />
   </div>
 </template>
 
-<script>
+<!-- <script>
 import NavBar from '@/components/Nav/NavBar.vue'
 import SecondaryHero from '@/components/Sections/SecondaryHero.vue'
 import BlogListing from '@/components/Sections/BlogListing.vue'
@@ -29,6 +29,7 @@ export default {
     MainFooter
   },
   async asyncData ({ $content, params, error }) {
+    console.log('async data!')
     const blogs = await $content('blog', params.slug)
       .only(['title', 'description', 'slug', 'cover'])
       .sortBy('date', 'desc')
@@ -70,6 +71,36 @@ export default {
     }
   }
 }
+</script> -->
+
+<script lang="ts">
+import NavBar from '@/components/Nav/NavBar.vue'
+import SecondaryHero from '@/components/Sections/SecondaryHero.vue'
+import BlogListing from '@/components/Sections/BlogListing.vue'
+import MainFooter from '@/components/Sections/MainFooter.vue'
+import SlopeSeparator from '@/components/Sections/Fragments/SlopeSeparator.vue'
+
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'Blog',
+  components: {
+    NavBar,
+    SecondaryHero,
+    SlopeSeparator,
+    BlogListing,
+    MainFooter
+  },
+  async setup(){
+    const { data } = await useAsyncData('blog', () => queryContent('/blog')
+    .sort({ createdAt: -1 })
+    .find());
+    
+    return {
+      data
+    }
+  }
+});
 </script>
 
 <style>

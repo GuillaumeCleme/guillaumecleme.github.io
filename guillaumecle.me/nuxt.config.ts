@@ -9,6 +9,17 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
+  modules: [
+    '@nuxt/content'
+  ],
+  content: {
+    highlight: {
+      theme: 'github-light',
+      preload: [
+        'java'
+      ]
+    }
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {

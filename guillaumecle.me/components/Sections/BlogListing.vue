@@ -12,7 +12,7 @@
                 :title="blog.title"
                 :description="blog.description"
                 :cover="blog.cover"
-                :slug="blog.slug"
+                :slug="blog._path"
                 :featured="index == 0"
               />
             </div>

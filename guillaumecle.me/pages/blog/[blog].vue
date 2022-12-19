@@ -5,7 +5,7 @@
     <main>
       <section class="relative block" style="height: 500px;">
         <CoverImage
-          :cover="post.cover"
+          :cover="data.cover"
         />
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
@@ -30,12 +30,12 @@
             <div class="px-6">
               <ProfileImage />
               <ProfileHeader
-                :share-url="post.shareUrl"
+                :share-url="data.shareUrl"
               />
               <div class="mt-6 py-10 border-t border-gray-300">
                 <div class="flex flex-wrap justify-center">
                   <div class="w-full lg:w-9/12 px-4">
-                    <nuxt-content class="text-gray-800" :document="post" />
+                    <ContentRenderer class="text-gray-800 nuxt-content" :value="data"></ContentRenderer>
                   </div>
                 </div>
               </div>
@@ -48,12 +48,37 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import NavBar from '@/components/Nav/NavBar.vue'
 import CoverImage from '@/components/Images/CoverImage.vue'
 import MainFooter from '@/components/Sections/MainFooter.vue'
 import ProfileHeader from '@/components/Sections/Fragments/ProfileHeader.vue'
 import ProfileImage from '@/components/Images/ProfileImage.vue'
+
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'Blog',
+  components: {
+    NavBar,
+    CoverImage,
+    MainFooter,
+    ProfileHeader,
+    ProfileImage
+  },
+  async setup(){
+
+    const route = useRoute();
+    const { data } = await useAsyncData('blog', () => queryContent(route.path).findOne());
+
+    return {
+      data: (data as any)
+    }
+  }
+});
+</script>
+<!-- <script>
+
 
 export default {
   name: 'BlogPost',
@@ -91,7 +116,7 @@ export default {
   }
 }
 
-</script>
+</script> -->
 
 <style>
 .nuxt-content h1 {
@@ -163,5 +188,12 @@ export default {
 }
 .nuxt-content blockquote p  {
   margin-bottom: 0;
+}
+
+.nuxt-content pre {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #f5f2f0;
 }
 </style>
