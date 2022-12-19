@@ -66,57 +66,39 @@ export default defineComponent({
     ProfileHeader,
     ProfileImage
   },
-  async setup(){
+  setup(){
 
     const route = useRoute();
-    const { data } = await useAsyncData('blog', () => queryContent(route.path).findOne());
 
+    const { data } = useAsyncData('blog', () => queryContent(route.path).findOne());
+
+    useHead(() => {
+      return {
+        title: 'Guillaume Clement | Blog | ' + (data.value as any).title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: (data.value as any).description
+          },
+          { name: 'og:title', content: (data.value as any).title },
+          { name: 'og:description', content: (data.value as any).description },
+          { name: 'og:image', content: (data.value as any).cover },
+          { name: 'og:image:secure_url', content: (data.value as any).cover },
+          { name: 'og:image:alt', content: (data.value as any).title },
+          { name: 'twitter:title', content: (data.value as any).title },
+          { name: 'twitter:description', content: (data.value as any).description },
+          { name: 'twitter:image', content: (data.value as any).cover }
+        ]
+      }
+    });
+    
     return {
-      data: (data as any)
+      data
     }
   }
 });
 </script>
-<!-- <script>
-
-
-export default {
-  name: 'BlogPost',
-  components: {
-    NavBar,
-    CoverImage,
-    MainFooter,
-    ProfileHeader,
-    ProfileImage
-  },
-  async asyncData ({ $content, params }) {
-    const post = await $content('blog', params.slug).fetch()
-
-    return { post }
-  },
-  head () {
-    return {
-      title: 'Guillaume Clement | Blog | ' + this.post.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.post.description
-        },
-        { name: 'og:title', content: this.post.title },
-        { name: 'og:description', content: this.post.description },
-        { name: 'og:image', content: this.post.cover },
-        { name: 'og:image:secure_url', content: this.post.cover },
-        { name: 'og:image:alt', content: this.post.title },
-        { name: 'twitter:title', content: this.post.title },
-        { name: 'twitter:description', content: this.post.description },
-        { name: 'twitter:image', content: this.post.cover }
-      ]
-    }
-  }
-}
-
-</script> -->
 
 <style>
 .nuxt-content h1 {
