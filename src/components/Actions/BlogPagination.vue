@@ -4,7 +4,7 @@
       <a
         href="#"
         class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 ml-0 rounded-l hover:bg-blue-500 hover:text-white"
-      ><span>Previous</span></a></a>
+      ><span>Previous</span></a>
       <a
         href="#"
         class="py-2 px-4 leading-tight bg-white border border-gray-200 text-blue-700 border-r-0 hover:bg-blue-500 hover:text-white"

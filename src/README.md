@@ -1,4 +1,5 @@
-# Nuxt 3 Minimal Starter
+# guillaumecleme.github.io
+Guillaume Clement's Portfolio - https://guillaumecle.me
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -40,3 +41,8 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Credits
+
+* Template: [Creative Tim - Landing Page](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/landing).
+* Font: [Font Awesome](https://fontawesome.com/license )
