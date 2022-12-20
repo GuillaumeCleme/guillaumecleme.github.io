@@ -1,42 +1,21 @@
 {
-  "title": "Guillaume Clement - Resume",
-  "name": "guillaumecle.me",
-  "version": "3.0.0",
-  "description": "Guillaume Clement's portfolio site built using a simple Nuxt.js and Tailwind CSS implementation.",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "build": "nuxi generate",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "npm run lint:js",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@nuxt/content": "^1.9.0",
-    "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@nuxtjs/eslint-config": "^3.1.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/fontawesome": "^1.1.2",
-    "@nuxtjs/google-analytics": "^2.4.0",
-    "@nuxtjs/tailwindcss": "^3.4.2",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@vue/test-utils": "^1.1.0",
-    "autoprefixer": "^9.8.6",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.5.0",
-    "eslint": "^7.10.0",
-    "eslint-plugin-nuxt": "^1.0.0",
-    "jest": "^26.5.0",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "vue-jest": "^3.0.4"
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/vue-fontawesome": "^3.0.2",
+    "@nuxt/content": "^2.3.0",
+    "autoprefixer": "^10.4.13",
+    "nuxt": "3.0.0",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }

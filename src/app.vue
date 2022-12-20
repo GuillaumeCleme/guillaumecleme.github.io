@@ -1,9 +1,10 @@
 <template>
   <div class="text-gray-800 antialiased">
-    <slot />
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
   </div>
 </template>
-
 <style>
 html {
     scroll-behavior: smooth;

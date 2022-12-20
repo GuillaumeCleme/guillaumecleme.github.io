@@ -12,7 +12,7 @@
                 :title="blog.title"
                 :description="blog.description"
                 :cover="blog.cover"
-                :slug="blog.slug"
+                :slug="blog._path ?? '#'"
                 :featured="index == 0"
               />
             </div>
@@ -23,27 +23,27 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
 import SlopeSeparator from '@/components/Sections/Fragments/SlopeSeparator.vue'
 import BlogCard from '@/components/Cards/BlogCard.vue'
 
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: 'BlogListing',
   components: {
     SlopeSeparator,
     BlogCard
   },
-  props: {
-    blogs: {
-      type: Array,
-      required: true
+  setup(){
+
+    const { data:blogs } = useAsyncData('blogs', () => queryContent('/blog')
+    .sort({ createdAt: -1 })
+    .find());
+    
+    return {
+      blogs
     }
   }
-}
-
+});
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-
-</style>

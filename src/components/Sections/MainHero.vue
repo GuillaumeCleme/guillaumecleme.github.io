@@ -19,7 +19,7 @@
     </div>
     <img
       class="absolute top-0 b-auto right-0 -mt-12 sm:mt-0 sm:w-6/12 w-10/12 z-0"
-      src="~/assets/img/blue-geo-background-crop.png"
+      src="/img/blue-geo-background-crop.png"
       alt="Background Graphic - Blue Triangles"
       style="max-height:1000px"
     >

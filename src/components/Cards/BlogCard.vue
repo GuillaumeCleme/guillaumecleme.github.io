@@ -7,13 +7,13 @@
         ''
     ]"
   >
-    <NuxtLink :to="{ name: 'blog-slug', params: { blog: 'blog', slug: slug } }">
+    <NuxtLink :to="slug">
       <div
         class="flex items-end justify-end w-full bg-cover h-56"
         :class="[
           featured ?
-            'featured-post-cover' :
-            ''
+          'featured-post-cover' :
+          ''
         ]"
         :style="'background-image: url(' + cover + ')'"
       />
@@ -29,9 +29,10 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
   name: 'BlogCard',
   props: {
     title: {
@@ -54,14 +55,13 @@ export default {
       default: false
     }
   }
-}
-
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.featured-post-cover {
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .featured-post-cover {
     height: 32rem;
   }
 }

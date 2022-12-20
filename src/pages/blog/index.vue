@@ -2,10 +2,11 @@
   <div>
     <NavBar />
     <main>
-      <MainHero />
-      <SectionFocus />
-      <SectionAboutMe />
-      <SectionExperience />
+      <SecondaryHero />
+      <div class="relative py-20">
+        <SlopeSeparator direction="desc" fill-color="text-white" />
+      </div>
+      <BlogListing />
     </main>
     <MainFooter />
   </div>
@@ -13,36 +14,34 @@
 
 <script lang="ts">
 import NavBar from '@/components/Nav/NavBar.vue'
-import MainHero from '@/components/Sections/MainHero.vue'
-import SectionFocus from '@/components/Sections/SectionFocus.vue'
-import SectionAboutMe from '@/components/Sections/SectionAboutMe.vue'
-import SectionExperience from '@/components/Sections/SectionExperience.vue'
+import SecondaryHero from '@/components/Sections/SecondaryHero.vue'
+import BlogListing from '@/components/Sections/BlogListing.vue'
 import MainFooter from '@/components/Sections/MainFooter.vue'
+import SlopeSeparator from '@/components/Sections/Fragments/SlopeSeparator.vue'
 
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Index',
+  name: 'Blog',
   components: {
     NavBar,
-    MainHero,
-    SectionFocus,
-    SectionAboutMe,
-    SectionExperience,
+    SecondaryHero,
+    SlopeSeparator,
+    BlogListing,
     MainFooter
   },
   setup(){
-    const ogTitle = 'Guillaume Clement&#039;s personal portfolio.';
-    const ogDesc = 'View Guillaume&#039;s portfolio and contact information.';
+    const ogTitle = 'Guillaume Clement&#039;s personal blog.';
+    const ogDesc = 'Checkout Guillaume&#039;s blog which covers topics around Code, Product, Methodology, and Technology';
     const ogImageUrl = 'https://guillaumecle.me/og-image.png';
 
     useHead({
-      title: 'Guillaume Clement | Digital Transformation Specialist, Technical Leader, Advisor',
+      title: 'Guillaume Clement | Blog',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Guillaume Clement&#039;s portfolio listing skills such as AEM (Adobe Experience Manager) and AEM Forms and experience as a Director of Solution Delivery.'
+          content: 'Guillaume Clement&#039;s blog covering topics around Code, Product, Methodology, and Technology.'
         },
         { name: 'og:title', content: ogTitle },
         { name: 'og:description', content: ogDesc },
@@ -57,3 +56,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+</style>

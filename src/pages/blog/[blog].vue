@@ -5,7 +5,7 @@
     <main>
       <section class="relative block" style="height: 500px;">
         <CoverImage
-          :cover="post.cover"
+          :cover="blog?.cover"
         />
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
@@ -30,12 +30,12 @@
             <div class="px-6">
               <ProfileImage />
               <ProfileHeader
-                :share-url="post.shareUrl"
+                :share-url="blog?.shareUrl"
               />
               <div class="mt-6 py-10 border-t border-gray-300">
                 <div class="flex flex-wrap justify-center">
                   <div class="w-full lg:w-9/12 px-4">
-                    <nuxt-content class="text-gray-800" :document="post" />
+                    <ContentRenderer class="text-gray-800 nuxt-content" :value="blog ?? undefined"></ContentRenderer>
                   </div>
                 </div>
               </div>
@@ -48,15 +48,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import NavBar from '@/components/Nav/NavBar.vue'
 import CoverImage from '@/components/Images/CoverImage.vue'
 import MainFooter from '@/components/Sections/MainFooter.vue'
 import ProfileHeader from '@/components/Sections/Fragments/ProfileHeader.vue'
 import ProfileImage from '@/components/Images/ProfileImage.vue'
 
-export default {
-  name: 'BlogPost',
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'Blog',
   components: {
     NavBar,
     CoverImage,
@@ -64,33 +66,39 @@ export default {
     ProfileHeader,
     ProfileImage
   },
-  async asyncData ({ $content, params }) {
-    const post = await $content('blog', params.slug).fetch()
+  setup(){
 
-    return { post }
-  },
-  head () {
+    const route = useRoute();
+
+    const { data:blog } = useAsyncData('blog', () => queryContent(route.path)
+    .findOne());
+
+    useHead(() => {
+      return {
+        title: 'Guillaume Clement | Blog | ' + (blog.value as any).title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: (blog.value as any).description
+          },
+          { name: 'og:title', content: (blog.value as any).title },
+          { name: 'og:description', content: (blog.value as any).description },
+          { name: 'og:image', content: (blog.value as any).cover },
+          { name: 'og:image:secure_url', content: (blog.value as any).cover },
+          { name: 'og:image:alt', content: (blog.value as any).title },
+          { name: 'twitter:title', content: (blog.value as any).title },
+          { name: 'twitter:description', content: (blog.value as any).description },
+          { name: 'twitter:image', content: (blog.value as any).cover }
+        ]
+      }
+    });
+    
     return {
-      title: 'Guillaume Clement | Blog | ' + this.post.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.post.description
-        },
-        { name: 'og:title', content: this.post.title },
-        { name: 'og:description', content: this.post.description },
-        { name: 'og:image', content: this.post.cover },
-        { name: 'og:image:secure_url', content: this.post.cover },
-        { name: 'og:image:alt', content: this.post.title },
-        { name: 'twitter:title', content: this.post.title },
-        { name: 'twitter:description', content: this.post.description },
-        { name: 'twitter:image', content: this.post.cover }
-      ]
+      blog
     }
   }
-}
-
+});
 </script>
 
 <style>
@@ -163,5 +171,12 @@ export default {
 }
 .nuxt-content blockquote p  {
   margin-bottom: 0;
+}
+
+.nuxt-content pre {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  background: #f5f2f0;
 }
 </style>
