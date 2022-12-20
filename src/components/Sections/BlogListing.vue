@@ -7,7 +7,7 @@
           <div class="container mx-auto px-6 relative">
             <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
               <BlogCard
-                v-for="(blog, index) in data"
+                v-for="(blog, index) in blogs"
                 :key="blog.slug"
                 :title="blog.title"
                 :description="blog.description"
@@ -35,13 +35,14 @@ export default defineComponent({
     SlopeSeparator,
     BlogCard
   },
-  async setup(){
-    const { data } = await useAsyncData('blog', () => queryContent('/blog')
+  setup(){
+
+    const { data:blogs } = useAsyncData('blogs', () => queryContent('/blog')
     .sort({ createdAt: -1 })
     .find());
     
     return {
-      data
+      blogs
     }
   }
 });

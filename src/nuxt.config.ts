@@ -9,6 +9,9 @@ export default defineNuxtConfig({
       "@fortawesome/vue-fontawesome",
     ],
   },
+  experimental: {
+    payloadExtraction: false
+  },
   modules: [
     '@nuxt/content'
   ],

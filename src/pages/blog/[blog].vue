@@ -5,7 +5,7 @@
     <main>
       <section class="relative block" style="height: 500px;">
         <CoverImage
-          :cover="data.cover"
+          :cover="blog?.cover"
         />
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
@@ -30,12 +30,12 @@
             <div class="px-6">
               <ProfileImage />
               <ProfileHeader
-                :share-url="data.shareUrl"
+                :share-url="blog?.shareUrl"
               />
               <div class="mt-6 py-10 border-t border-gray-300">
                 <div class="flex flex-wrap justify-center">
                   <div class="w-full lg:w-9/12 px-4">
-                    <ContentRenderer class="text-gray-800 nuxt-content" :value="data"></ContentRenderer>
+                    <ContentRenderer class="text-gray-800 nuxt-content" :value="blog ?? undefined"></ContentRenderer>
                   </div>
                 </div>
               </div>
@@ -70,31 +70,32 @@ export default defineComponent({
 
     const route = useRoute();
 
-    const { data } = useAsyncData('blog', () => queryContent(route.path).findOne());
+    const { data:blog } = useAsyncData('blog', () => queryContent(route.path)
+    .findOne());
 
     useHead(() => {
       return {
-        title: 'Guillaume Clement | Blog | ' + (data.value as any).title,
+        title: 'Guillaume Clement | Blog | ' + (blog.value as any).title,
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: (data.value as any).description
+            content: (blog.value as any).description
           },
-          { name: 'og:title', content: (data.value as any).title },
-          { name: 'og:description', content: (data.value as any).description },
-          { name: 'og:image', content: (data.value as any).cover },
-          { name: 'og:image:secure_url', content: (data.value as any).cover },
-          { name: 'og:image:alt', content: (data.value as any).title },
-          { name: 'twitter:title', content: (data.value as any).title },
-          { name: 'twitter:description', content: (data.value as any).description },
-          { name: 'twitter:image', content: (data.value as any).cover }
+          { name: 'og:title', content: (blog.value as any).title },
+          { name: 'og:description', content: (blog.value as any).description },
+          { name: 'og:image', content: (blog.value as any).cover },
+          { name: 'og:image:secure_url', content: (blog.value as any).cover },
+          { name: 'og:image:alt', content: (blog.value as any).title },
+          { name: 'twitter:title', content: (blog.value as any).title },
+          { name: 'twitter:description', content: (blog.value as any).description },
+          { name: 'twitter:image', content: (blog.value as any).cover }
         ]
       }
     });
     
     return {
-      data
+      blog
     }
   }
 });
