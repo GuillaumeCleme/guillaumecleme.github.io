@@ -1,3 +1,0 @@
-Sitemap: https://guillaumecle.me/sitemap.xml
-User-agent: *
-Disallow: /~img/source

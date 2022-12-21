@@ -1,4 +1,8 @@
 {
+  "title": "Guillaume Clement - Portfolio",
+  "name": "@guillaumecleme/portfolio",
+  "version": "3.1.0",
+  "description": "Guillaume Clement's portfolio site built using a simple Nuxt.js and Tailwind CSS implementation.",
   "private": true,
   "scripts": {
     "build": "nuxi generate",

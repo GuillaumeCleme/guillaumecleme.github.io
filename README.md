@@ -1,27 +1,46 @@
 # guillaumecleme.github.io
 Guillaume Clement's Portfolio - https://guillaumecle.me
 
-## Usage
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-After installation, run `npm install` and then run `npm run dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved.
+## Setup
 
+Make sure to install the dependencies:
 
 ```bash
-# install dependencies
-$ npm install
+# yarn
+yarn install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# npm
+npm install
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
 ## Credits
 
