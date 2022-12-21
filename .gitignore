@@ -19,8 +19,15 @@ pnpm-debug.log*
 # Editor directories and files
 .idea
 .vscode
+*.log*
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Project build files
+.nuxt
+.nitro
+.cache
+.output
